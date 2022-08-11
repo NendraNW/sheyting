@@ -1,0 +1,2456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>བཤེས་སྤྲིང་།</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href=Nagarjuna.jpeg >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+	{
+  margin-left: 8%;
+  font-size: 2vw;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+p,h1,h2{
+	font-size: 2vw;
+    font-family:'kingthings_linear_kregular';
+    color:#6369D1;
+}
+	  
+
+.sidenav {
+  height: 100%;
+  width: 8%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#6369D1;
+  overflow-x: hidden;
+  padding-top: 1vw;
+}
+
+.sidenav a {
+  padding: 2px 3px 2px 7px;
+  text-decoration: none;
+  font-size: 1vwpx;
+  background-color:#6369D1;
+  color: #FFFFFF;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #FF785A;
+}
+
+.main {
+  margin-left: 8%; /* Same as the width of the sidenav */
+  font-size: 2vw; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+	{
+  font-size: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+  font-size:2vw;
+  text-align:center;
+}
+
+h1{
+  font-size:2vw;
+  text-align:center;
+  font-weight:bold;
+}
+
+body {
+
+	 background-color:#ffffff;
+}
+
+hr{
+  color:white;
+  height:5px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color:#FF785A;
+  margin-left:8%;
+	z-index: 1;
+	  }
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1vw 1vw;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+	  
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color:#6369D1;
+  color:white;
+}
+
+.content {
+  padding: 1vw;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 91%;
+}
+
+.sticky + .content {
+  padding-top: 3vw;
+}
+table {
+  table-layout: fixed ;
+  width: 92%;
+  text-align:center;
+}
+td {
+  width: 46%;
+}
+	  
+.btn {
+	font-size:1vw;
+	padding:1vw;
+	  }
+	  
+.footer {
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height:1.5vw;
+  background-color:#FF785A;
+  color:#FFFFFF;
+  text-align: center;
+  font-size:1.5vw;
+}
+
+audio {
+	z-index:0;
+	  }
+	 
+.card {
+	z-index:0;
+	  }
+a:hover {
+        background-color: yellow;
+    }
+
+.tooltip1 {
+border-bottom:white; color: #6369D1;
+position: relative;
+}
+.tooltip1 span {
+margin-left: -999em;
+position: absolute;
+}
+.tooltip1:hover span {
+border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+position: absolute; left: 1em; top: 2em; z-index: 99;
+margin-left: 0; width: 250px;
+font-size: 15px;
+}
+.tooltip1:hover img {
+border: 0; margin: -15px 0 0 -150px;
+float: left; position: absolute;
+}
+.tooltip1:hover em {
+display: block; padding: 0.2em 0 0.6em 0;
+}
+.classic { padding: 0.8em 1em; }
+.custom1 { padding: 0.5em 0.8em 0.8em 2em; }
+* html a:hover { background: transparent; }
+.classic {background: #FFFFAA; border: 1px solid #FFAD33; }
+.critical { background: #FFCCAA; border: 1px solid #FF3334;	}
+.help1 { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+.info { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+.warning { background: #FFFFAA; border: 1px solid #FFAD33; }
+
+</style>
+</head>
+<body>
+
+<div class="container text-center" style="margin-bottom:0;color:white;background-color:#FFFFFF;">
+  <br><h1>བཤེས་སྤྲིང་།</h1><br>
+</div>
+
+<div id="navbar" style="font-size:1.5vw;">
+  <a class="active" href="index.html">བཤེས་སྤྲིང་།</a>
+  <a href="gyalsey.html">རྒྱལ་སྲས་ལག་ལེན།</a>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+	<br>
+	
+<div class="sidenav" style="font-size:1vw">
+<p style="color:#FFFFFF;font-size:1vw;">Paragraphs</p>
+<table>
+<tr><td><a href="#CollapseE1">1</a></td><td><a href="#CollapseE2">2</a></td><td><a href="#CollapseE3">3</a></td></tr>
+<tr><td><a href="#CollapseE4">4</a></td><td><a href="#CollapseE5">5</a></td><td><a href="#CollapseE6">6</a></td></tr>
+<tr><td><a href="#CollapseE7">7</a></td><td><a href="#CollapseE8">8</a></td><td><a href="#CollapseE9">9</a></td></tr>
+<tr><td><a href="#CollapseE10">10</a></td><td><a href="#CollapseE11">11</a></td><td><a href="#CollapseE12">12</a></td></tr>
+<tr><td><a href="#CollapseE13">13</a></td><td><a href="#CollapseE14">14</a></td><td><a href="#CollapseE15">15</a></td></tr>
+<tr><td><a href="#CollapseE16">16</a></td><td><a href="#CollapseE17">17</a></td><td><a href="#CollapseE18">18</a></td></tr>
+<tr><td><a href="#CollapseE19">19</a></td><td><a href="#CollapseE20">20</a></td><td><a href="#CollapseE21">21</a></td></tr>
+<tr><td><a href="#CollapseE22">22</a></td><td><a href="#CollapseE23">23</a></td><td><a href="#CollapseE24">24</a></td></tr>
+<tr><td><a href="#CollapseE25">25</a></td><td><a href="#CollapseE26">26</a></td><td><a href="#CollapseE27">27</a></td></tr>
+<tr><td><a href="#CollapseE28">28</a></td><td><a href="#CollapseE29">29</a></td><td><a href="#CollapseE30">30</a></td></tr>
+<tr><td><a href="#CollapseE31">31</a></td><td><a href="#CollapseE32">32</a></td><td><a href="#CollapseE33">33</a></td></tr>
+<tr><td><a href="#CollapseE34">34</a></td><td><a href="#CollapseE35">35</a></td><td><a href="#CollapseE36">36</a></td></tr>
+<tr><td><a href="#CollapseE37">37</a></td><td><a href="#CollapseE38">38</a></td><td><a href="#CollapseE39">39</a></td></tr>
+<tr><td><a href="#CollapseE40">40</a></td><td><a href="#CollapseE41">41</a></td><td><a href="#CollapseE42">42</a></td></tr>
+<tr><td><a href="#CollapseE43">43</a></td><td><a href="#CollapseE44">44</a></td><td><a href="#CollapseE45">45</a></td></tr>
+<tr><td><a href="#CollapseE46">46</a></td><td><a href="#CollapseE47">47</a></td><td><a href="#CollapseE48">48</a></td></tr>
+<tr><td><a href="#CollapseE49">49</a></td><td><a href="#CollapseE50">50</a></td><td><a href="#CollapseE51">51</a></td></tr>
+<tr><td><a href="#CollapseE52">52</a></td><td><a href="#CollapseE53">53</a></td><td><a href="#CollapseE54">54</a></td></tr>
+<tr><td><a href="#CollapseE55">55</a></td><td><a href="#CollapseE56">56</a></td><td><a href="#CollapseE57">57</a></td></tr>
+<tr><td><a href="#CollapseE58">58</a></td><td><a href="#CollapseE59">59</a></td><td><a href="#CollapseE60">60</a></td></tr>
+<tr><td><a href="#CollapseE61">61</a></td><td><a href="#CollapseE62">62</a></td><td><a href="#CollapseE63">63</a></td></tr>
+<tr><td><a href="#CollapseE64">64</a></td><td><a href="#CollapseE65">65</a></td><td><a href="#CollapseE66">66</a></td></tr>
+<tr><td><a href="#CollapseE67">67</a></td><td><a href="#CollapseE68">68</a></td><td><a href="#CollapseE69">69</a></td></tr>
+<tr><td><a href="#CollapseE70">70</a></td><td><a href="#CollapseE71">71</a></td><td><a href="#CollapseE72">72</a></td></tr>
+<tr><td><a href="#CollapseE73">73</a></td><td><a href="#CollapseE74">74</a></td><td><a href="#CollapseE75">75</a></td></tr>
+<tr><td><a href="#CollapseE76">76</a></td><td><a href="#CollapseE77">77</a></td><td><a href="#CollapseE78">78</a></td></tr>
+<tr><td><a href="#CollapseE79">79</a></td><td><a href="#CollapseE80">80</a></td><td><a href="#CollapseE81">81</a></td></tr>
+<tr><td><a href="#CollapseE82">82</a></td><td><a href="#CollapseE83">83</a></td><td><a href="#CollapseE84">84</a></td></tr>
+<tr><td><a href="#CollapseE85">85</a></td><td><a href="#CollapseE86">86</a></td><td><a href="#CollapseE87">87</a></td></tr>
+<tr><td><a href="#CollapseE88">88</a></td><td><a href="#CollapseE89">89</a></td><td><a href="#CollapseE90">90</a></td></tr>
+<tr><td><a href="#CollapseE91">91</a></td><td><a href="#CollapseE92">92</a></td><td><a href="#CollapseE93">93</a></td></tr>
+<tr><td><a href="#CollapseE94">94</a></td><td><a href="#CollapseE95">95</a></td><td><a href="#CollapseE96">96</a></td></tr>
+<tr><td><a href="#CollapseE97">97</a></td><td><a href="#CollapseE98">98</a></td><td><a href="#CollapseE99">99</a></td></tr>
+<tr><td><a href="#CollapseE100">100</a></td><td><a href="#CollapseE101">101</a></td><td><a href="#CollapseE102">102</a></td></tr>
+<tr><td><a href="#CollapseE103">103</a></td><td><a href="#CollapseE104">104</a></td><td><a href="#CollapseE105">105</a></td></tr>
+<tr><td><a href="#CollapseE106">106</a></td><td><a href="#CollapseE107">107</a></td><td><a href="#CollapseE108">108</a></td></tr>
+<tr><td><a href="#CollapseE109">109</a></td><td><a href="#CollapseE110">110</a></td><td><a href="#CollapseE111">111</a></td></tr>
+<tr><td><a href="#CollapseE112">112</a></td><td><a href="#CollapseE113">113</a></td><td><a href="#CollapseE114">114</a></td></tr>
+<tr><td><a href="#CollapseE115">115</a></td><td><a href="#CollapseE116">116</a></td><td><a href="#CollapseE117">117</a></td></tr>
+<tr><td><a href="#CollapseE118">118</a></td><td><a href="#CollapseE119">119</a></td><td><a href="#CollapseE120">120</a></td></tr>
+<tr><td><a href="#CollapseE121">121</a></td><td><a href="#CollapseE122">122</a></td><td><a href="#CollapseE123">123</a></td></tr></table>
+</div>
+	
+<table style="margin-left:8vw">
+	<tr><img src="Nagarjuna.jpeg" style="display:block;margin-left:auto;margin-right:auto;"></tr>
+	<tr><td><h1>Meaning of the title.</h1><br>
+  <p>In Sanskrit: Suhridhallekha In Tibetan: bshes pa’i spring yig In English: Letter to a Friend</p></td><td><h1>མཚན་དོན།</h1><br>
+  <p>རྒྱ་གར་སྐད་དུ། སུ་ཧྲི་ད་ལེ་ཁ། བོད་སྐད་དུ། བཤེས་པའི་སྤྲིང་ཡིག།</p><br> <audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	<br>
+	<br>
+	<br>
+	
+	<tr><td><h1>Jurchha</h1><!-- Prayer -->
+  <p>Homage to the Gentle and Glorious Youth (Mañjushri).</p><br></td><td><h1>འགྱུར་ཕྱག་འཚལ་བ།</h1><br><!-- Prayer -->
+  <p>འཇམ་དཔལ་གཞོན་ནུར་གྱུར་པ་ལ་ཕྱག་འཚལ་ལོ།།</p><br> <audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE1"><h1>1) Using the commitment to compose the text as an exhortation to listen</h1></a><!--Paragraph 1-->
+  <p>Listen now to these few lines of noble song<br>
+	  That I’ve composed for those with many virtues, fit for good,<br>
+	  To help them yearn for merit springing from<br>
+	  The sacred words of He Who’s Gone to Bliss. </p><br>
+
+	  
+	  <p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE1" role="button" aria-expanded="false" aria-controls="collapseE1">
+    Explanation</a></p>
+<div class="collapse" id="collapseE1">
+  <div class="card card-body">
+	  For those who naturally have good qualities, that is, who have formerly accumulated positive deeds, which are the causes of temporary and ultimate excellence, and who are worthy vessels for practicing positive actions and are therefore fit for virtue, I, Nagarjuna, have composed a few verses put together using the style of composition known as sublime melody. Their subject is the Dharma whose source is the Excellent Words6 or declarations of the Sugata. My purpose in composing them is that I myself or others might aspire to merit, they are worth your listening to, O king.
+  </div></div></td>
+		
+<td><h1>༡༽ ཉན་པར་བསྐུལ་བ།</h1><br><!--Paragraph 1--><p><a class="tooltip1">ཡོན་ཏན་<span class="custom1 help1"><img src="dzo.png" height="40" width="40"><em>ཡོན་ཏན</em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>
+  <a class="tooltip1">རང་བཞིན་<span class="custom1 help1"><img src="dzo.png" height="40" width="40"><em> <b> རང་བཞིན </b></em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>
+  <a class="tooltip1">དགེ་འོས་<span class="custom1 help1"><img src="dzo.png" height="40" width="40"><em>དགེ་འོས</em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>
+  བདག་གིས་ནི།།<br>
+  <a class="tooltip1">བདེ་བར<span class="custom1 help1"><img src="dzo.png" height="40" width="40"><em>བདེ་བར</em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>
+  <a class="tooltip1">གཤེགས་<span class="custom1 help1"><img src="dzo.png" height="40" width="40"><em>གཤེགས་པ</em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>
+པའི་
+<a class="tooltip1">གསུང་བསྙད་<span class="custom1 help1"><img src="dzo.png" height="40" width="40"><em>གསུང་བསྙད</em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>
+ལས་བྱུང་བའི།།<br>བསོད་ནམས་
+<a class="tooltip1">འདུན་སླད་<span class="custom1 help1"><img src="dzo.png" height="40" width="40"><em>འདུན་སླད་</em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>
+འཕགས་པའི་
+<a class="tooltip1">དབྱངས་<span class="custom1 help1"><img src="dzo.png" height="40" width="40"><em>དབྱངས་</em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>
+འདི་དག།<br>
+<a class="tooltip1">ཅུང་ཟད་ཅིག་<span class="custom1 help1"><img src="dzo.png" height="40" width="40"><em>ཅུང་ཟད་ཅིག་</em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>
+<a class="tooltip1">ཅིག་བསྡེབས་<span class="custom1 help1"><img src="dzo.png" height="40" width="40"><em>ཅིག་བསྡེབས་</em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>
+
+ཁྱོད་ཀྱིས་གསན་པར་རིགས།།</p>
+
+  <audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	
+	<tr><td><a name="CollapseE2"><h1>2) Humility with regard to the words</h1></a><!--Paragraph 2-->
+  <p>The wise will always honor and bow down<br>To Buddha statues, though they’re made of wood;<br>
+  	So too, although these lines of mine be poor,<br>Do not feel scorn, they teach the Holy Way.
+	   
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE2" role="button" aria-expanded="false" aria-controls="collapseE2">
+    Explanation</a></p>
+<div class="collapse" id="collapseE2">
+  <div class="card card-body">
+	 One might think that since the Mighty One taught everything for attaining the higher realms and the lasting happiness of liberation and omniscience there is no need for this teaching. But just as the wise venerate a statue of the Sugata, whatever the quality of the material, whether it is made of some base material such as stone or wood or of a superior substance such as gold, in the same way, however excellent or poor these lines—my poetry—may be, their subject is how to reach the higher realms and the lasting happiness of liberation and omniscience, and they follow the teaching of the holy Dharma, which shows that. For that reason, to the wise, who rely not on words but on the meaning, they are worth praising; they are not to be despised but are worth listening to and putting into practice.
+	</div></div></td>
+		
+		</p><br></td><td><h1>༢༽དཔྱེའི་སྒོ་ལས་ཉན་པར་བསྐུལ་བ།</h1> <!--Paragraph 2-->
+  <br><p>ཇི་ལྟར་བདེ་གཤེཊ་སྐུ་གཟུགས་ཤིང་ལས་ཀྱང་།།<br>བགྱིས་པ་ཅི་འདྲའང་རུང་སྟེ་མཁས་པས་མཆོད།།<br>དེ་བཞིན་བདག་གི་སྙན་ངག་འདི་ངན་ཡང་།།<br>དམ་ཆོས་བརྗོད་ལ་བརྟེན་སླད་སྨད་མི་བགྱི།།</p>  <audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	
+	<tr><td><a name="CollapseE3"><h1>3) Humility with regard to the meaning</h1></a><!--Paragraph 3-->
+  <p>While you have surely learned and understood<br>The Mighty Buddha’s many lovely words,<br>
+  	Is it not so that something made of chalk<br>By moonlight lit shines gleaming whiter still?</p>
+		
+	<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE3" role="button" aria-expanded="false" aria-controls="collapseE3">
+    Explanation</a></p>
+<div class="collapse" id="collapseE3">
+  <div class="card card-body">
+	 Although you, O King, may well have absorbed the Mahamuni’s many pleasant, beautiful, and excellent words by listening to them and reflecting on them, nevertheless, as it will help make their meaning even clearer, this letter is still worthy of your attention. Take the example of a fine house that has been whitewashed with chalk: although it is naturally white, the light of the moon at midnight striking it makes it even more intensely white, does it not?
+	</div></div></td>
+		
+		<td><h1>༣༽དོན་གྱི་སྒོ་ལས་ཉན་པར་བསྐུལ་བ།</h1> <!--Paragraph 3-->
+  <br><p>ཐུབ་ཆེན་པོའི་བཀའ་ནི་སྙན་དགུ་ཞིག།<br>ཁྱོད་ཀྱི་ཐུགས་སུ་ལྟ་ཡང་ཆུད་མོད་ཀྱི།།<br>རྡོ་ཐལ་ལས་བགྱིས་དགུང་ཟླའི་འོད་ཀྱིས་ནི།།<br>ཆེས་དཀར་ཉིད་དུ་ཅི་སྟེ་མི་བགྱིད་ལགས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE4"><h1>4) Brief account of six things one should keep in mind, the Buddha and so forth, which are the basis of faith</h1></a><!--Paragraph 4-->
+  <p>Six things there are the Buddhas have explained,<br>And all their virtues you must keep in mind:
+  <br>The Buddha, Dharma, Sangha, bounteous acts,<br>And moral laws and gods—each one recall.</p>
+		
+<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE4" role="button" aria-expanded="false" aria-controls="collapseE4">
+    Explanation</a></p>
+<div class="collapse" id="collapseE4">
+  <div class="card card-body">
+	The Victorious Ones have perfectly explained six things to be kept in mind. Keep in mind the Buddha, the Buddha Bhagavan who is Thus Gone and so forth. Keep in mind the Dharma, the Bhagavan’s teaching that is excellently spoken and so forth. Keep in mind the Sangha, the Bhagavan’s Sangha of Shravakas who abide excellently and so forth. Keep in mind bounteousness, untainted by miserliness and so forth. Keep in mind discipline, unspoiled, free of faults, unadulterated, unobscured, the discipline that accomplishes the concentration praised by the wise. And keep in mind celestial beings, the gods of the realm of the Four Great Kings, and those from the Heaven of the Thirty- Three up to “Mastery over Others’ Creations,” and so on, who constitute the particular result of practicing the teachings for attaining the higher realms. Keep in mind the many virtues of each of these, as they have been described in the sutras.
+	
+	</div></div></td>
+		
+		<td><h1>༤༽ཐར་པ་འཐོབ་པའི་རྒྱུ་ རྗེས་དྲན་ཉམས་སུ་ལེན་ཐངས།</h1> <!--Paragraph 4-->
+  <br><p>རྒྱལ་བས་སངས་རྒྱས་ཆོས་དང་དགེ་འདུན་དང་།།<br>གཏོང་དང་ཚུལ་ཁྲིམས་ལྷ་རྗེས་དྲན་པ་དྲུག།<br>རབ་ཏུ་བཀའ་སྩལ་དེ་དག་སོ་སོ་ཡི།།<br>ཡོན་ཏན་ཚོགསཀྱི་རྗེས་སུ་དྲན་པར་བགྱི།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE5"><h1>5) Keeping celestial beings in mind</h1></a><!--Paragraph 5-->
+  <p>With body, speech, and mind always rely<br>On wholesome deeds, the tenfold virtuous path.<br>
+  	Avoiding liquor at all costs, thus find<br>True joy to lead a life of virtuous deeds.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE5" role="button" aria-expanded="false" aria-controls="collapseE5">
+    Explanation</a></p>
+<div class="collapse" id="collapseE5">
+  <div class="card card-body">
+	Because it is the nature of the positive act of concentration to lead to a pleasant result, such actions constitute the path that leads to happy rebirth. You should therefore constantly rely on the tenfold path, performing the ten positive actions while avoiding the ten negative actions— the three physical acts of taking life, taking what is not given, and sexual misconduct; the four verbal acts of lying, sowing discord, harsh speech, and worthless chatter; and the three mental acts of covetousness, wishing harm on others, and wrong views. And because they cause carelessness, abstain from intoxicants in all circumstances. In this way, take joy in a life of virtue, without being careless and harming others.
+
+	</div></div></td>
+		
+		<td><h1>༥༽རྗེས་དྲན་དྲུག་ལས་ ལྷ་རྗེས་དྲན་བཤད་པ།</h1> <!--Paragraph 5-->
+  <br><p>དགེ་བའི་ལས་ལམ་བཅུ་པོ་ལུས་དང་ནི།།<br>ངག་དང་ཡིད་ཀྱིས་རྟག་ཏུ་བསྟེན་བགྱི་ཞིང་།།<br>ཆང་རྣམས་ལས་ལྡོག་དེ་བཞིན་དགེ་བ་ཡི།།<br>འཚོ་བ་ལ་ཡང་མངོན་པར་དགྱེས་པར་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE6"><h1>6) Keeping bounteousness in mind</h1></a><!--Paragraph 6-->
+  <p>Possessions are ephemeral and essenceless—<br>Know this and give them generously to monks,
+  	<br>To brahmins, to the poor, and to your friends:<br>Beyond there is no greater friend than gift.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE6" role="button" aria-expanded="false" aria-controls="collapseE6">
+    Explanation</a></p>
+<div class="collapse" id="collapseE6">
+  <div class="card card-body">
+	Having realized that possessions such as food are inconstant and fluctuate, that in changing and transforming they are devoid of essence, in order to make them meaningful try to use them properly, giving to those with good qualities (monks and brahmins), to those who suffer (the poor, the sick, and so forth), to those who help you (friends) and to those you venerate (spiritual teachers and parents). Even beyond the world there is no friend more sublime, more beneficial, than giving, because it gives rise directly and indirectly to ripened effects that are inexhaustible.
+
+	</div></div></td>
+		
+		<td><h1>༦༽གཏོང་བ་རྗེས་སུ་དྲན་པ།</h1> <!--Paragraph 6-->
+  <br><p >ལོངས་སྤྱོད་གཡོ་བ་སྙིང་པོ་མེད་མཁྱེན་ནས།།<br><span data-toggle="tooltip" data-placement="top" title="ge-hsdsahd long-something">དགེ་སློང་</span><span data-toggle="tooltip" data-placement="top" title="jaackfruit
+    ">བྲམ་ཟེ་</span>བཀྲེན་དང་བཤེས་རྣམས་ལ།།<br>སྤྱིན་པ་ཚུལ་བཞིན་བསྩལ་བགྱི་ཕ་རོལ་ཏུ།།<br>སྦྱིན་ལས་གཞན་པའི་གཉེན་མཆོག་མ་མཆིས་སོ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE7"><h1>7) Keeping discipline in mind</h1></a><!--Paragraph 7-->
+  <p>Keep your vows unbroken, undegraded,<br>Uncorrupted, and quite free of stain.<br>
+  	Just as the earth’s the base for all that’s still or moves,<br>On discipline, it’s said, is founded all that’s good.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE7" role="button" aria-expanded="false" aria-controls="collapseE7">
+    Explanation</a></p>
+<div class="collapse" id="collapseE7">
+  <div class="card card-body">
+	Your discipline should have four particular features. In not transgressing the basic precepts it should be unbroken. In not transgressing the most minor branches it should be without degradation—this is the old sense of the term in Tibetan and means “unstained by faults and therefore vast and elevated.” It should be unadulterated by anything incompatible, and it should be untainted by selfish thoughts or wishing to better one’s lot. Observe all these. Just as the earth supports things moving and unmoving—beings and trees, for instance—discipline is the foundation of all good qualities, concentration, wisdom, and so forth, as our Teacher, the Buddha, has declared: reliance on discipline gives rise to concentration and therefore naturally gives rise to meditation.
+
+	</div></div></td>
+		
+		<td><h1>༧༽ཚུལ་ཁྲིམས་སྲུང་ཚུལ།</h1> <!--Paragraph 7-->
+  <br><p>ཁྱོད་ཀྱིས་ཚུལ་ཁྲིམས་མ་ཉམས་མོད་མི་དམའ།།<br>མ་འདྲེས་མ་སྦགས་པ་དག་བསྟེན་པར་མཛོད།།<br>ཁྲིམས་ནི་རྒྱུ་དང་མི་རྒྱུའི་ས་བཞིན་དུ།།<br>ཡོན་ཏན་ཀུན་གྱི་གཞི་རྟེན་ལགས་པར་གསུངས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE8"><h1>8) The essence of the path</h1></a><!--Paragraph 8-->
+  <p>Generosity and discipline, patience, diligence,<br>Concentration, and the wisdom that knows thusness—<br>
+  	Those measureless perfections, make them grow,<br>And be a Mighty Conqueror who’s crossed samsara’s sea.</p>
+		
+			<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE8" role="button" aria-expanded="false" aria-controls="collapseE8">
+    Explanation</a></p>
+<div class="collapse" id="collapseE8">
+  <div class="card card-body">
+	Develop within you the six transcendent perfections, which cannot be fathomed by the Shravakas and Pratyekabuddhas: unstinting generosity reinforced by bodhichitta and wisdom; discipline—the avoidance of negative actions and their basis, attachment and so forth; the patience to put up with difficulties; diligence—delight in positive actions; one- pointed concentration on virtue and on the absolute; and wisdom, the knowledge of thusness, the ultimate meaning, just as it is. And be the Mighty Victor who, as the result of doing so, has reached the other side of the ocean of existence. Here Nagarjuna is saying that since one will become a Mighty Buddha through these six transcendent perfections, one should make them part of one’s being.
+	</div></div></td>
+		
+		<td><h1>༨༽ཐར་པའི་ལམ་གྱི་རྩ་བ་ཕར་ཕྱིན་དྲུག་ངོ་སྤྲོད།</h1> <!--Paragraph 8-->
+  <br><p>སྦྱིན་དང་ཚུལ་ཁྲིམས་བཟོད་བརྩོན་བསམ་གཏན་དང་།།<br>དེ་བཞིན་ཤེས་རབ་གཞལ་མེད་ཕ་རོལ་ཕྱིན།།<br>འདི་དག་རྒྱས་མཛད་སྲིད་པའི་རྒྱ་མཚོ་ཡི།།<br>ཕ་རོལ་ཕྱིན་པ་རྒྱལ་བའི་དབང་པོ་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE9"><h1>9) Generosity</h1></a><!--Paragraph 9-->
+  <p>Those who show their parents great respect<br>With Brahma or a Master will be linked;<br>
+  	By venerating them they’ll win repute,<br>In future they’ll attain the higher realms.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE9" role="button" aria-expanded="false" aria-controls="collapseE9">
+    Explanation</a></p>
+<div class="collapse" id="collapseE9">
+  <div class="card card-body">
+	The kind of person who respectfully makes offerings to his parents is unharmed by nonhumans and blessed by the gods, and is therefore to be associated with Brahma, worthy of the world’s offerings. And because he has the teacher’s blessings he is also to be associated with a master who teaches the essential point of what to do and what to give up. Besides these advantages, it is good to make offerings to them, one’s parents, for one will have a good reputation even in this life, and in the hereafter, that is, in the next life too, one will attain the higher realms. So apply yourself to venerating your parents and others.
+	</div></div></td>
+		
+		<td><h1>༩༽སྦྱིན་པ་གཏང་སའི་ཡུལ་ངོས་བཟུང་།</h1> <!--Paragraph 9-->
+  <br><p>གང་ལ་ཕ་དང་མ་དག་མཆོད་པ་ཡི།།<br>རིགས་དེ་ཚངས་བཅས་སློབ་དཔོན་བཅས་པའང་ལགས།།<br>དེ་དག་ལ་མཆོད་གྲགས་པར་གྱུར་པ་དང་།།<br>སླད་མ་ལ་ཡང་མཐོ་རིས་གྱུར་པ་ལགས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE10"><h1>10) Discipline</h1></a><!--Paragraph 10-->
+  <p>Eschew all harm, don’t steal, make love, or lie,<br>Abstain from drink, untimely greed for food,<br>
+  	Indulging in high beds, and singing too,<br>Refrain from dancing, all adornments shun.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE10" role="button" aria-expanded="false" aria-controls="collapseE10">
+    Explanation</a></p>
+<div class="collapse" id="collapseE10">
+  <div class="card card-body">
+	These concern laypeople. Abstain for twenty- four hours from the following various acts: killing, or here, harming, other living beings; theft—that is, taking what is not given; sexual intercourse (“impure conduct”); telling lies (in particular, claiming to have sublime qualities one does not have); drinking alcohol, which produces a careless state of intoxication; greedily eating at inappropriate times; indulging in a bed higher than eighteen inches; the three activities of singing, dancing (along with dressing up), and playing music; and these three: wearing necklaces of jewels and other ornaments that are a source of vanity, wearing multicolored ornaments, and using sweet smelling perfumes and so forth.
+	
+	</div></div></td>
+		
+		<td><h1>༡༠༽ཚུལ་ཁྲིམས་ཡན་ལག་བརྒྱད་སྲུང་ཐངས།</h1> <!--Paragraph 10-->
+  <br><p>འཚེ་དང་ཆོམ་ཀུན་འཁྲིག་པ་བརྫུན་དང་ནི།།<br>ཆང་དང་དུས་མིན་ཟས་ལ་ཆགས་པ་དང་།།<br>མལ་སྟན་མཐོ་ལ་དགའ་དང་གླུ་དག་དང་།།<br>གར་དང་འཕྲེང་བའི་ཁྱད་པར་རྣམས་སྤོང་ཞིང་།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE11"><h1>11) Precepts that have to be kept</h1></a><!--Paragraph 11-->
+  <p>For men and women who keep this eight- branched vow<br>And emulate the vows the Arhats took,<br>
+  	Their wish to nurture and to cleanse will grant<br>Them handsome bodies as celestial gods.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE11" role="button" aria-expanded="false" aria-controls="collapseE11">
+    Explanation</a></p>
+<div class="collapse" id="collapseE11">
+  <div class="card card-body">
+	As a result of their desire to nurture the seed of positive actions and purify negative actions, men and women—that is, those on the three continents where they can observe such discipline—who keep these eight branches with renewal and confession, following the example of the discipline of Arhats in the past, are granted (and obtain) a pleasing body in the six realms of the gods of enjoyment.
+
+	</div></div></td>
+		
+		<td><h1>༡༡༽ཚུལ་ཁྲིམས་བསྲུང་བའི་ཕན་ཡོན།</h1> <!--Paragraph 11-->
+  <br><p>དགྲ་བཅོམ་ཚུལ་ཁྲིམས་རྗེས་སུ་བྱེད་པ་ཡི།།<br>ཡན་ལག་བརྒྱད་པོ་འདི་དག་དང་ལྡན་ན།།<br>གསོ་སྦྱོང་འདོད་སྤྱོད་ལྷ་ལུས་ཡིད་འོང་བ།།<br>སྐྱེས་པ་བུད་མེད་དག་ལ་སྩོལ་བར་བགྱིད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE12"><h1>12) Getting rid of incompatible traits</h1></a><!--Paragraph 12-->
+  <p>Stinginess and cunning, greed and sloth<br>And arrogance, attachment, hate, and pride<br>
+  	(“I’ve breeding, good looks, learning, youth, and power”)—<br>Such traits are seen as enemies of good.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE12" role="button" aria-expanded="false" aria-controls="collapseE12">
+    Explanation</a></p>
+<div class="collapse" id="collapseE12">
+  <div class="card card-body">
+	Consider the following traits as enemies, since they destroy positive actions: niggardliness with regard to one’s own possessions; craftiness in skillfully playing down one’s own defects, and deceitfulness in pretending to have certain qualities so as to beguile others; attachment to body and wealth; laziness, that is, not delighting in virtue; arrogance, thinking one has qualities that one does not have; desire—craving for existence; hatred—the hatred of the inhabitants of the Hell of Torment Unsurpassed; and pride—being proud of one’s breeding (“I am superior,” one thinks), proud of one’s physique, proud of one’s learning, proud of one’s youthfulness (“I’ve lost none of my youthfulness, I’m still in top form.”), and proud of one’s power (“How immensely powerful I am!”).
+
+	</div></div></td>
+		
+		<td><h1>༡༢༽ཚུལ་ཁྲིམས་ཀྱི་མི་མཐུན་ཕྱོགས་སྤང་ཚུལ།</h1> <!--Paragraph 12-->
+  <br><p>སེར་སྣ་གཡོ་སྒྱུ་ཆགས་དང་སྙོམས་ལས་དང་།།<br>མངོན་པའི་ང་རྒྱལ་འདོད་ཆགས་ཞེ་སྡང་དང་།།<br>རིགས་དང་གཟུགས་དང་ཐོས་པ་ལང་ཚོ་དང་།།<br>དབང་ཐང་ཆེ་བའི་རྒྱགས་པ་དགྲ་བཞིན་གཟིགས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE13"><h1>13) Exercising carefulness regarding what is compatible with discipline</h1></a><!--Paragraph 13-->
+  <p>Carefulness is the way to deathlessness,<br>While carelessness is death, the Buddha taught.<br>
+  	And thus, so that your virtuous deeds may grow,<br>Be careful, constantly and with respect.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE13" role="button" aria-expanded="false" aria-controls="collapseE13">
+    Explanation</a></p>
+<div class="collapse" id="collapseE13">
+  <div class="card card-body">
+	Carefulness is characterized by practicing virtuous activities and guarding the mind from tainted activities. As the Capable One has taught in such passages as this one from the sutras, it is the way beyond suffering, like the nectar of immortality. Carelessness becomes the way to experiencing the suffering of birth and death in samsara. Accordingly, so that you might give birth to virtuous ways where you have not done so, and where you have conceived them develop them more and more, respectfully practice carefulness, habituating yourself all the time to virtuous activities.
+	
+	</div></div></td>
+		
+		<td><h1>༡༣༽ཚུལ་ཁྲིམས་དང་མཐུན་པའི་ཕྱོགས་བག་ཡོད་བསྲུང་དགོཔ།</h1> <!--Paragraph 13-->
+  <br><p>བག་ཡོད་བདུད་རྩིའི་གནས་ཏེ་བག་མེད་པ།།<br>འཆི་བའི་གནས་སུ་ཐུབ་པས་བཀའ་སྩལ་ཏེ།།<br>དེ་བས་ཁྱོད་ཀྱིས་དགེ་ཆོས་སྤེལ་སླད་དུ།།<br>གུས་པས་རྟག་ཏུ་བག་དང་བཅས་པར་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE14"><h1>14) Benefits and examples of being careful</h1></a><!--Paragraph 14-->
+  <p>Those who formerly were careless<br>But then took heed are beautiful and fair,<br>
+  	As is the moon emerging from the clouds,<br>Like Nanda, Angulimala, Darshaka, Udayana.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE14" role="button" aria-expanded="false" aria-controls="collapseE14">
+    Explanation</a></p>
+<div class="collapse" id="collapseE14">
+  <div class="card card-body">
+	One might wonder whether there is any point in instructing those who have been careless in the past. Some people, however, having previously been careless (indulging without thinking in negative actions as a result of their being dominated by afflictive emotions or influenced by evil companions), subsequently, on meeting a spiritual friend and wholeheartedly adopting what is right and abandoning wrong, become careful. Such people, as we can see from the following examples, are like the moon unobscured by the clouds—utterly beautiful. 
+Nanda was a randy young Shakya, a younger brother of the Buddha. He could not part from his wife for a single instant. He took ordination in the Buddha’s doctrine but still thought longingly about his wife, day and night, and thus failed to practice virtue. The Buddha, seeing that he would be reborn in the hells, instructed him personally. As a result Nanda became afraid, started practicing the path, and attained the level of Arhat. He was commended by the Buddha as the Shravaka who had most successfully controlled his senses.
+ Angulimala was the gullible son of a brahmin. His teacher deceitfully instructed him, “If you kill a thousand people and make a garland of their fingers, you will go to the celestial abodes.” He had slain all but one of the thousand when the Buddha ordained him and taught him the Dharma. He became an Arhat. 
+Then there is the example of Darshaka, another name for Ajatashatru. Having met his companion in evil, Devadatta, he committed a large number of negative actions, among them murdering his father, the king, who was a follower of the Dharma. Later he gained faith in the Buddha, was freed from the results of his negative actions, and became an Arhat. 
+Udayana killed his mother when she prevented him sleeping with someone else’s wife. He took ordination, but when it was realized that he had committed a “crime with immediate retribution,” he was expelled by the Sangha and went to a remote region. He built a temple and stayed there. In due course a large number of monks in the area gathered there, he became their Elder and properly cared for the Sangha. As a result, when he died he had but a “yo- yo” rebirth in hell as the fully ripened effect of his crime with immediate retribution and was then reborn as a god, attaining the result of a Stream Enterer on the Buddha’s path.
+
+	</div></div></td>
+		
+		<td><h1>༡༤༽བག་ཡོད་བསྒོམ་པའི་ཕན་ཡོན་དཔྱེའི་སྒོ་ལས་བཤད་པ།</h1> <!--Paragraph 14-->
+  <br><p>གང་ཞིག་སྔོན་ཆད་བག་མེད་གྱུར་པ་ལ།།<br>ཕྱིས་ནས་བག་དང་ལྡན་པར་གྱུར་དེ་ཡང་།།<br>ཟླ་བ་སྤྲིན་བྲལ་ལྟ་བུར་རྣམ་མཛེས་ཏེ།།<br>དགའ་བོ་སོར་ཕྲེང་མཐོང་ལྡན་དེ་བྱེད་བཞིན།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE15"><h1>15) Giving up anger (as a cause)</h1></a><!--Paragraph 15-->
+  <p>Hard to practice, patience knows no peer,<br>So never allow yourself a moment’s rage.<br>
+  	Avoid all anger and you will become<br>A Non- Returner, so the Buddha said.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE15" role="button" aria-expanded="false" aria-controls="collapseE15">
+    Explanation</a></p>
+<div class="collapse" id="collapseE15">
+  <div class="card card-body">
+	There is no other difficult practice equal to patience—not getting angry with someone who harms you, and even if you do get angry, not remaining so. It is the ultimate austerity. Therefore do not allow yourself even the slightest occasion for anger, which is incompatible with such a sublime austerity as patience. Should you wonder why, the Buddha himself declared that by being patient and avoiding getting angry one will attain the ultimate result of Non- Returner.
+	
+	</div></div></td>
+		
+		<td><h1>༡༥༽བཟོད་པའི་མི་མཐུན་ཕྱོགས་སྤང་ཚུལ།</h1> <!--Paragraph 15-->
+  <br><p>འདི་ལྟར་བཟོད་མཚུངས་དཀའ་ཐུབ་མ་མཆིས་པས།།<br>ཁྱོད་ཀྱིས་ཁྲོ་བའི་གོ་སྐབས་དབྱེ་མི་བགྱི།།<br>ཁྲོ་བ་སྤངས་པས་ཕྱིར་མི་ལྡོག་པ་ཉིད།།<br>འཐོབ་པར་འགྱུར་ཞེས་སངས་རྒྱས་ཞལ་གྱིས་བཞེས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE16"><h1>16) Giving up resentment (as a result)</h1></a><!--Paragraph 16-->
+  <p>“He’s abused me, struck, defeated me,<br>And all my money too he has purloined!”<br>
+  	To harbor such resentment leads to strife;<br>Give up your grudge and sleep will easily come.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE16" role="button" aria-expanded="false" aria-controls="collapseE16">
+    Explanation</a></p>
+<div class="collapse" id="collapseE16">
+  <div class="card card-body">
+	By harboring resentment—“He insulted me with abusive language, he hit me with things like stones and sticks, he got the better of me by ridiculing me and using his power, he ran off with my money”—one builds up the motives for negative actions, physical and verbal, thereby sparking off disputes. By abandoning grudges one will gain the temporary result of a mind free of anguish and so fall asleep happily.
+	  
+	</div></div></td>
+		
+		<td><h1>༡༦༽ཞེ་སྡང་གི་འབྲས་བུ་སྤང་དགོཔ།</h1> <!--Paragraph 16-->
+  <br><p>བདག་ནི་འདིས་སྤྱོས་འདིས་བཏགས་ཕམ་པར་བྱས།།<br>འདི་ཡིས་བདག་གི་ནོར་ཕྲོགས་གྱུར་ཏོ་ཞེས།།<br>འཁོན་དུ་འཛིན་པས་འཁྲུག་ལོང་རྣམས་བསྐྱེད་དེ།།<br>ཁོན་འཛིན་རྣམ་སྤངས་བདེ་བར་གཉིད་ཀྱིས་ལོག།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE17"><h1>17) In connection with this, a particular feature of the mind that is the basis for patience</h1></a><!--Paragraph 17-->
+  <p>Understand your thoughts to be like figures drawn<br>On water, sandy soil, or carved in stone.<br>
+  	Of these, for tainted thoughts the first’s the best,<br>While when you long for Dharma, it’s the last.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE17" role="button" aria-expanded="false" aria-controls="collapseE17">
+			Explanation</a></p>
+<div class="collapse" id="collapseE17">
+  <div class="card card-body">
+	Of all the various constant and inconstant mental activities that different kinds of sentient beings can have, you should know that thoughts are like figures drawn on water, which instantly dissolve, or like drawings on sand, which are erased by different conditions, or like figures drawn on stone, which are indelible. Where thoughts, either positive or negative, are like drawings on sand, this is of medium value. Of these three cases, the first, where the thoughts are inconstant like figures traced on water, is the best as regards emotionally tainted thoughts. As regards aspirations to undertake Dharma practice, the last, where the thoughts are stable like figures drawn on stone, is the best. So practice accordingly.
+	  
+	</div></div></td>
+		
+		<td><h1>༡༧༽སེམས་ཀྱི་སྤྱོད་པའི་ཡུལ་ལུ་བརྟགས་ཏེ་བག་ཡོད་བསྒོམ་ཚུལ།</h1> <!--Paragraph 17-->
+  <br><p>སེམས་ནི་ཆུ་དང་ས་དང་རྡོ་བ་ལ།།<br>རི་མོར་བྲིས་པ་དེ་འདྲར་རིག་པར་གྱིས།།<br>དེའི་ནང་ཉོན་མོངས་ཅན་ལ་དང་པོ་ནི།།<br>མཆོག་སྟེ་ཆོས་འདོད་རྣམས་ལ་མཐའ་མ་ལགས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE18"><h1>18) Avoiding harsh words, the main condition that sparks off anger</h1></a><!--Paragraph 18-->
+  <p>Three kinds of speech are used by humankind,<br>And these the Victor variously described:<br>
+  	Like honey, sweet; like flowers, true; like filth,<br>Improper speech—the last of these eschew.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE18" role="button" aria-expanded="false" aria-controls="collapseE18">
+    Explanation</a></p>
+<div class="collapse" id="collapseE18">
+  <div class="card card-body">
+	The Victorious One who has overcome evil ways spoke of three kinds of speech in human beings, namely, sweet, pleasing words, truth, and improper speech. Of these three kinds of speech that people use, the first, he said, delights, like honey; the second is beautiful and worthy of praise, like a flower; the last, because it is to be despised, is like filth. Accordingly, avoid the last of these, and make good use of the first two.
+
+	</div></div></td>
+		
+		<td><h1>༡༨༽ངག་གི་སྤྱོད་པ་ལུ་བརྟགས་ཏེ་བག་ཡོད་སྒོམ་ཚུལ།</h1> <!--Paragraph 18-->
+  <br><p>རྒྱལ་བས་སྙིང་ལ་འབབ་དང་བདེན་པ་དང་།།<br>ལོག་པར་སྨྲ་ལྡན་སྐྱེས་བུ་རྣམས་ཀྱི་ནི།།<br>སྦྲང་རྩི་མེ་ཏོག་མི་གཙང་ལྟ་བུའི་ཚིག།<br>རྣམ་གསུམ་བཀའ་སྩལ་དེ་ལས་མཐའ་མ་སྤང་།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE19"><h1>19) What one should be diligent in</h1></a><!--Paragraph 19-->
+  <p>Some there are who go from light to light,<br>And some whose end from dark is darkness still,<br>
+  	While some from light to dark, or dark to light<br>End up, thus four, of these be as the first.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE19" role="button" aria-expanded="false" aria-controls="collapseE19">
+    Explanation</a></p>
+<div class="collapse" id="collapseE19">
+  <div class="card card-body">
+	There are four kinds of individual. Those who go from the light of the higher realms and again end up in the light of the higher realms of gods and humans. Those who go from the darkness of the lower realms and end up in darkness, being again reborn in the lower realms. Those who go from the light of birth in the higher realms to end up in darkness as the most wretched of humans or as beings in the three lower realms. And those who go from the darkness of the three lower realms and wretched states to end up in the light of the higher realms. Of these four kinds of individual, you should be the first, the one who goes from light to light.
+	  
+	</div></div></td>
+		
+		<td><h1>༡༩༽རང་གཞན་གཉིས་ཀྱི་སྤྱོད་པ་ལ་བརྟགས་ཏེ་བསླབ་ཚུལ།</h1> <!--Paragraph 19-->
+  <br><p>སྣང་ནས་སྣང་བའི་མཐར་ཐུག་མུན་པ་ནས།།<br>མུན་པའི་མཐའ་དང་སྣང་ནས་མུན་མཐར་ཐུག།<br>མུན་ནས་སྣང་བའི་མཐར་ཐུག་གང་ཟག་ནི།།<br>བཞི་སྟེ་དེ་དག་རྣམས་ཀྱི་དང་པོ་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE20"><h1>20) An instruction on diligence in matching intention and application</h1></a><!--Paragraph 20-->
+  <p>Men, like mangoes, can be sour and yet look ripe,<br>Some though ripe look green, and others green<br>
+  	Are sour indeed, while others still look ripe<br>And ripe they are: from this know how to act.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE20" role="button" aria-expanded="false" aria-controls="collapseE20">
+    Explanation</a></p>
+<div class="collapse" id="collapseE20">
+  <div class="card card-body">
+	Human beings are like the fruit of the mango tree. Some seem ripe— their actual deeds are wholesome—but are unripe—their intention is base. Some seem unripe—their deeds are base—but in fact are ripe—the intention is wholesome. Others look unripe and are unripe—both intention and deed are unwholesome. Yet others look ripe and are ripe—both intention and deed are wholesome. Knowing the meaning of each of these four characteristics, whatever you do you should gain a proper understanding of the essential point of avoiding and adopting. The last of these four cases is the greatest ally in performing positive actions.
+	  
+	</div></div></td>
+		
+		<td><h1>༢༠༽སྤྱིར་འགྲོ་བ་མིའི་བསམ་སྤྱོད་ཀྱི་ཁྱད་པར་ཤེས་དགོཔ།</h1> <!--Paragraph 20-->
+  <br><p>མི་ནི་ཨ་མྲའི་འབྲས་བཞིན་མ་སྨིན་ལ།།<br>སྨིན་པ་དང་འདྲ་སྨིན་ལ་མ་སྨིན་འདྲ།།<br>མ་སྨིན་མ་སྨིན་པར་སྣང་མིན་ལ་ནི།།<br>སྨིན་པར་སྣང་ཞེས་བགྱི་བ་འདྲར་རྟོགས་མཛོད།།</p> <audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE21"><h1>21) Guarding the senses from others’ wives</h1></a><!--Paragraph 21-->
+  <p>Do not gaze on others’ wives, but if you do,<br>Regard them as your mother, child, or sib,<br>
+  	Depending on their age. Should lust arise,<br>Think well: they are by nature unclean filth.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE21" role="button" aria-expanded="false" aria-controls="collapseE21">
+    Explanation</a></p>
+<div class="collapse" id="collapseE21">
+  <div class="card card-body">
+	Do not gaze at other people’s wives with designs, and even if you do look at them, try and think of them, depending on their age, as your mother if they are older, as a daughter if they are younger, and as a sister if they are the same age as you. And if that does not work and you still feel lustful, reflect well on their unclean nature, on their unpleasant smell and so on.
+	
+	</div></div></td>
+		
+		<td><h1>༢༡༽བསམ་གཏན་བསྒོམ་ཚུལ་ལས་འདོད་པའི་ཡུལ་ལུ་ཆགས་སེམས་སྤང་དགོཔ།</h1> <!--Paragraph 21-->
+  <br><p>གཞན་གྱི་ཆུང་མ་མི་ལྟ་མཐོང་ན་ཡང་།།<br>ན་ཚོད་མཐུན་པར་མ་དང་བུ་མོ་དང་།།<br>སྲིང་མོའི་འདུ་ཤེས་བསྐྱེད་བགྱི་ཆགས་གྱུར་ན།།<br>མི་གཙང་ཉིད་དུ་ཡང་དག་བསམ་པར་བགྱི།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE22"><h1>22) Guarding the senses from other desires</h1></a><!--Paragraph 22-->
+  <p>Guard this fickle mind as you would do<br>Your learning, children, treasure, or your life.<br>
+  	Renounce all sensual pleasure as if it were<br>A viper, poison, weapon, foe, or fire.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE22" role="button" aria-expanded="false" aria-controls="collapseE22">
+    Explanation</a></p>
+<div class="collapse" id="collapseE22">
+  <div class="card card-body">
+	If thinking in this way still does not stop you, you must guard your mind as follows. Guard the mind, which moves onto objects without staying still for a single second, from objects that tend to give rise constantly to afflictive emotions. How can one do this? Guard the mind in the same way as you protect what you have learnt from being forgotten;25 guard the mind like a beloved child; guard it as you would some valuable treasure; guard the mind as if it were your cherished life. And that is not all. Concerning the pleasures of the senses, Nagarjuna instructs us to shy away from all sensual pleasure as if it were a venomous snake, a noxious poison, a lethal weapon, an enemy obstructing one’s temporal life and happiness, or a fire burning one.
+
+	</div></div></td>
+		
+		<td><h1>༢༢༽སེམས་ཀྱི་དབང་པོ་བསྲུང་དགོཔ།</h1> <!--Paragraph 22-->
+  <br><p>གཡོ་བའི་སེམས་ནི་ཐོས་མཚུངས་བུ་ལྟ་བུར།།<br>གཏེར་བཞིན་སྲོག་དང་འདྲ་བར་བསྲུང་བགྱི་སྟེ།།<br>གདུག་པ་དུག་དང་མཚོན་དང་དགྲ་བོ་དང་།།<br>མེ་བཞིན་འདོད་པའི་བདེ་ལ་ཡིད་འབྱུང་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE23"><h1>23) The fault in not controlling the senses</h1></a><!--Paragraph 23-->
+  <p>The pleasures we desire will bring us ruin,<br>They’re like the kimba fruit, the Buddha said.<br>
+  	Eschew them, it’s their chains that tightly bind<br>The worldly in samsara’s prison- house.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE23" role="button" aria-expanded="false" aria-controls="collapseE23">
+    Explanation</a></p>
+<div class="collapse" id="collapseE23">
+  <div class="card card-body">
+	You might say, “Don’t pleasurable experiences give rise to happiness?” Although for ordinary people pleasures may appear to be related to happiness at the time they are enjoyed, in the end they are their undoing. They are, the Sovereign of the Conquerors said, like the fruit of the kimba tree, which grows in the western continent of Aparogodaniya: its skin is attractive but it is unpleasant inside; or it tastes delicious when one first eats it, but later it makes one ill. So, advises Nagarjuna, give up these pleasures, for it is the chains—the afflictive emotions—of attachment to pleasure that tightly bind the worldly in the prison of samsara.
+
+	</div></div></td>
+		
+		<td><h1>༢༣༽འདོད་པའི་ཡོན་ཏན་གྱི་ཉེས་དམིགས་བསྒོམ་དགོཔ།</h1> <!--Paragraph 23-->
+  <br><p>འདོད་པ་རྣམས་ནི་ཕུང་བ་བསྐྱེད་པ་སྟེ།།<br>རྒྱལ་བའི་དབང་པོས་ཀིམ་པའི་འབྲས་འདྲར་གསུངས།།<br>དེ་དག་སྤང་བགྱི་དེ་ཡི་ལྕགས་སྒྲོག་གིས།།<br>འཁོར་བའི་བཙོན་རར་འཇིག་རྟེན་འདི་དག་བཅིངས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE24"><h1>24) In praise of those who are able to control their senses</h1></a><!--Paragraph 24-->
+  <p>Of he whose fickle senses are controlled—<br>These six that never cease to dart at things—<br>
+  	And he who’s fought and conquered many foes,<br>The first is truly brave, the wise have said.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE24" role="button" aria-expanded="false" aria-controls="collapseE24">
+    Explanation</a></p>
+<div class="collapse" id="collapseE24">
+  <div class="card card-body">
+	The six sense organs, the eyes and so forth, change constantly as they encounter their objects, form and the others: they are unstable, making the mind flit towards their objects. Of the individual who is able to use antidotes to control these six sense organs and someone who is courageous in battle and victorious over all the hordes of enemies one could possibly defeat, the bravest, the real hero, the wise have said, is the first, the winner in the battle with the senses. For while we see plenty of people who win wars, there are no ordinary beings who manage to conquer their senses.
+	
+	</div></div></td>
+		
+		<td><h1>༢༤༽འདོད་པའི་བདེ་བ་ལུ་སེམས་བསྲུང་བའི་ཕན་ཡོན།</h1> <!--Paragraph 24-->
+  <br><p>གང་དག་དབང་པོ་དྲུག་ཡུལ་རྣམས་ལ་ནི།།<br>རྟག་ཏུ་མི་བརྟན་གཡོ་ལྡན་གང་དག་ཅིག།<br>གཡུལ་ངོར་དགྲ་ཚོགས་ལས་རྒྱལ་དེ་དག་ལས།།<br>མཁས་རྣམས་དང་པོ་དཔའ་རབ་ལགས་པར་འཚལ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE25"><h1>25) Getting rid of attachment by fully recognizing that the chief source of desire in the world of desire is the female body</h1></a><!--Paragraph 25-->
+  <p>Regard a young girl’s body on its own,<br>Its smell so foul, its openings nine—a pot<br>
+  	Of filth, insatiable, and clothed with skin.<br>Regard too her adornments on their own.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE25" role="button" aria-expanded="false" aria-controls="collapseE25">
+    Explanation</a></p>
+<div class="collapse" id="collapseE25">
+  <div class="card card-body">
+	Earlier Nagarjuna referred to the unclean nature of women’s bodies. In what way are they to be regarded as impure? If you consider a young woman’s body on its own, unadorned, it smells unpleasant, has nine orifices leaking foul matter, and is full of dirty things like excrement and urine. It is like a jar containing all sorts of filth, difficult to fill—for it is never satisfied, however much it has to eat and drink—and covered with skin, which is devoid of essence. That is all there is to it. You might argue that it is the things she adorns herself with that make one want her. But if you look at her adornments too, on their own, away from the body, you will no longer feel desire.
+	  
+	</div></div></td>
+		
+		<td><h1>༢༥༽བུམོ་ཚུ་ལུ་ཆགས་སེམས་སྤང་ཚུལ།</h1> <!--Paragraph 25-->
+  <br><p>བུད་མེད་གཞོན་ནུའི་ལུས་ནི་ལོགས་ཤིག་ཏུ།།<br>དྲི་ང་བ་དང་སྒོ་དགུ་དོད་པ་དང་།།<br>མི་གཙང་ཀུན་སྣོད་འདྲ་བ་གང་དཀའ་དང་།།<br>པགས་པས་གཡོགས་པ་རྒྱན་ཡང་ལོགས་ཤིག་གཟིགས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE26"><h1>26) Getting rid of attachment by understanding the way desire generally functions</h1></a><!--Paragraph 26-->
+  <p>A man with leprosy, consumed by germs,<br>Will stand before the fire for comfort’s sake<br>
+  	But still find no relief, so know the same is true<br>For those attached to the pleasures they desire.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE26" role="button" aria-expanded="false" aria-controls="collapseE26">
+    Explanation</a></p>
+<div class="collapse" id="collapseE26">
+  <div class="card card-body">
+	This verse shows the defect of attachment in the subject. In their longing to be comfortable, lepers afflicted by the microbes consuming them stand close to a fire, but there still is no relief for afterwards their distress again increases. Know that the same is also true for childish beings who are attached to pleasures.  
+	</div></div></td>
+		
+		<td><h1>༢༦༽འདོད་པའི་ཡུལ་ལུ་ཆགས་སེམས་སྤང་དགོཔ།</h1> <!--Paragraph 26-->
+  <br><p>ཇི་ལྟར་མཛེ་ཅན་སྲིན་འབུས་ཉེན་པ་ནི།།<br>བདེ་བའི་དོན་དུ་མེ་ལ་ཀུན་བསྟེན་ཀྱང་།།<br>ཞི་བར་མི་འགྱུར་དེ་དང་འདྲ་བར་ནི།།<br>འདོད་པ་རྣམས་ལ་ཆགས་པའང་མཁྱེན་པར་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE27"><h1>27) The antidote</h1></a><!--Paragraph 27-->
+  <p>In order that you see the absolute,<br>Get used to truly understanding things.<br>
+  	No other practice is there such as this<br>Possessed of special virtues such as these.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE27" role="button" aria-expanded="false" aria-controls="collapseE27">
+    Explanation</a></p>
+<div class="collapse" id="collapseE27">
+  <div class="card card-body">
+	Because it is the domain of the highest wisdom, the absolute truth—the unmistaken thatness—has to be seen with the eye of primal wisdom, and in order to do this you must examine outer and inner things, such as form, with superior intelligence and thereby reach a correct understanding that they are devoid of true existence. Get used to this again and again. There is no other method in the world that has the special qualities of this sort of perfect intelligence that can overcome afflictive emotions and arouse primal wisdom, their antidote.
+	
+	</div></div></td>
+		
+		<td><h1>༢༧༽ཉོན་མོངས་པའི་ས་བོན་གྱི་གཉེན་པོ་བསྒོམ་ཚུལ།</h1> <!--Paragraph 27-->
+  <br><p>དོན་དམ་གཟིགས་པར་བགྱི་སླད་དངོས་རྣམས་ལ།།<br>ཚུལ་བཞིན་ཡིད་ལ་བགྱིད་པ་དེ་གོམས་མཛོད།།<br>དེ་དང་འདྲ་བར་ཡོན་ཏན་ལྡན་པ་ཡི།།<br>ཆོས་གཞན་འགའ་ཡང་མཆིསཔ་་མ་ལགས་སོ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE28"><h1>28) The advantages of having the antidote and disadvantages of not having it</h1></a><!--Paragraph 28-->
+  <p>To those possessed of breeding, learning, handsome looks,<br>Who have no wisdom, neither discipline, you need not bow.<br>
+  	But those who do have these two qualities,<br>Though lacking other virtues, you should revere.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE28" role="button" aria-expanded="false" aria-controls="collapseE28">
+    Explanation</a></p>
+<div class="collapse" id="collapseE28">
+  <div class="card card-body">
+	People who come from a good family, who are good- looking, and learned in all the sutras and shastras, and yet do not have the twin virtues of wisdom (the realization of the natural state) and discipline (whereby they avoid breaking their vows) possess none of the good qualities of the holy beings and are therefore not worthy of reverence. On the other hand, those who possess these two virtues of wisdom and discipline are to be respectfully venerated even if they lack other qualities, such as breeding and good looks, because anyone who has the wisdom to know what to do and what not to do, and the discipline to not indulge in negative actions, is to be counted as a holy being.
+	  
+	</div></div></td>
+		
+		<td><h1>༢༨༽ཉོན་མོངས་པའི་གཉེན་པོ་ཡོན་ཏན་བསྒོམ་ནི།</h1> <!--Paragraph 28-->
+  <br><p>སྐྱེས་བུ་རིགས་གཟུགས་ཐོས་དང་ལྡན་རྣམས་ཀྱང་།།<br>ཤེས་རབ་ཚུལ་ཁྲིམས་བྲལ་བ་བཀུར་མ་ལགས།།<br>དེ་ལྟས་ཡོན་ཏན་གང་ལ་དེ་གཉིས་ལྡན།།<br>དེ་ནི་ཡོན་ཏན་གཞན་དང་བྲལ་ཡང་མཆོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE29"><h1>29) The eight ordinary concerns that have to be given up</h1></a><!--Paragraph 29-->
+  <p>You who know the world, take gain and loss,<br>Or bliss and pain, or kind words and abuse,<br>
+  	Or praise and blame—these eight mundane concerns—<br>Make them the same, and don’t disturb your mind.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE29" role="button" aria-expanded="false" aria-controls="collapseE29">
+    Explanation</a></p>
+<div class="collapse" id="collapseE29">
+  <div class="card card-body">
+	People meditating on emptiness in formal meditation sessions must not be carried away in the postmeditation period by the eight ordinary concerns. For this reason Nagarjuna addresses the king, “You who are thoroughly knowledgeable on the right worldly ways,” and instructs him thus: “Acquiring wealth and losing it; being happy (having pleasurable experiences) and unhappy (experiencing suffering); hearing pleasant words and unpleasant ones; being praised openly and criticized behind one’s back— these are known as the eight preoccupations common to ordinary worldly folk, with their different happy and unhappy moods. If you are to attain the state beyond the world, equalize these eight worldly concerns without dwelling on them as being things to be happy or sad about.”
+	  
+	</div></div></td>
+		
+		<td><h1>༢༩༽འཇིག་རྟེན་ཆོས་བརྒྱད་མགོ་སྙོམས་ཚུལ།</h1> <!--Paragraph 29-->
+  <br><p>འཇིག་རྟེན་མཁྱེན་པ་རྙེད་དང་མི་རྙེད་དང་།།<br>བདེ་དང་མི་བདེ་སྙན་དང་མི་སྙན་དང་།།<br>བསྟོད་སྨད་ཅེས་བགྱི་འཇིག་རྟེན་ཆོས་བརྒྱད་པོ།།<br>བདག་གི་ཡིད་ཡུལ་མིན་པར་མགོ་སྙོམས་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE30"><h1>30) Advice on giving up the negative actions</h1></a><!--Paragraph 30-->
+  <p>Perform no evil, even for the sake<br>Of brahmins, bhikshus, gods, or honored guests,<br>
+  	Your father, mother, queen, or for your court.<br>The ripened fruit in hell’s for you alone.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE30" role="button" aria-expanded="false" aria-controls="collapseE30">
+    Explanation</a></p>
+<div class="collapse" id="collapseE30">
+  <div class="card card-body">
+	One might wonder whether it is wrong to commit negative actions for the sake of one’s teacher, or brahmins, and so on. O King, you must not commit negative actions even for the sake of brahmins, monks, gods, guests, your parents, queen, or court. The ripened result of negative deeds, hell, is allotted to you alone, the person who has done them, and to no one else as accomplice: no one but you will receive your allotted fate.  
+	</div></div></td>
+		
+		<td><h1>༣༠༽འཇིག་རྟེན་ཆོས་བརྒྱད་ཀྱི་འབྲས་བུ་སྡིག་པ་ལུ་བསམ་ཚུལ།</h1> <!--Paragraph 30-->
+  <br><p>ཁྱོད་ཀྱིས་བྲམ་ཟེ་དགེ་སློང་ལྷ་དང་ནི།།<br>མགྲོན་དང་ཡབ་ཡུམ་དག་དང་བཙུན་མོ་དང་།།<br>འཁོར་གྱི་སླད་དུའང་སྡིག་པ་མི་བགྱི་སྟེ།།<br>དམྱལ་བའི་རྣམ་སྨིན་སྐལ་ནོད་འགའ་མ་མཆིས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE31"><h1>31) Why it is necessary to avoid negative actions</h1></a><!--Paragraph 31-->
+  <p>Although performing wrong and evil deeds<br>Does not at once, like swords, create a gash,<br>
+	  When death arrives, those evil acts will show<br>Their karmic fruit will clearly be revealed.</p>
+	  
+	  <p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE31" role="button" aria-expanded="false" aria-controls="collapseE31">
+    Explanation</a></p>
+<div class="collapse" id="collapseE31">
+  <div class="card card-body">
+	Someone with nihilist views might say that the fully ripened effect of negative actions done in this life cannot be seen now, so it will not occur in the
+next life. But even though the performance of evil deeds does not immediately cut one as when one touches a sharp weapon—in other words, it
+does not make one suffer straightaway—when the time comes to die, the
+result of the negative actions, whatever it may be—being tortured by
+Yama’s brutal henchmen and so on—will become clearly evident.
+	</div></div></td>
+	  
+	  <td><h1>༣༡༽ཆོས་བརྒྱད་ཀྱི་འབྲས་བུ་སྡིག་པ་སྤང་ཚུལ།</h1> <!--Paragraph 31-->
+  <br><p>སྡིག་པའི་ལས་རྣམས་སྤྱད་པ་འགའ་ཡང་ནི།།<br>དེ་ཡི་མོད་ལ་མཚོན་བཞིན་མི་གཅོད་ཀྱང་།།<br>འཆི་བའི་དུས་ལ་བབ་ན་སྡིག་པ་ཡི།།<br>ལས་ཀྱི་འབྲས་བུ་གང་ལགས་མངོན་པར་འགྱུར།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE32"><h1>32) A general explanation of the kinds of wealth to be adopted and abandoned</h1></a><!--Paragraph 32-->
+  <p>Faith and ethics, learning, bounteousness,<br>A flawless sense of shame and decency,<br>
+  	And wisdom are the seven riches Buddha taught.<br>Know, other common riches have no worth.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE32" role="button" aria-expanded="false" aria-controls="collapseE32">
+    Explanation</a></p>
+<div class="collapse" id="collapseE32">
+  <div class="card card-body">
+	The Capable One spoke of the following attributes as the seven noble
+riches, for they are the causes of untainted happiness and are not in any
+way ordinary. Faith—that is, the three kinds of faith in the Three Jewels
+and confidence in the law of actions and their effects. Discipline, the avoidance of harmful actions. Learning that comes from listening to the holy
+Dharma that leads to liberation, with the intention of gaining complete
+knowledge. Being generous—with a desire to make offerings and to help
+beings, to give away all one’s possessions without expecting anything in
+return or any karmic reward. A sense of shame with respect to oneself
+that prevents one from indulging in negative actions, and that is unstained
+by such things as jealousy or seeking veneration. A sense of decency with
+regard to others that stops one from engaging in unvirtuous practices. And
+wisdom, that is, knowledge of the particular and general characteristics of
+phenomena.
+You should realize that other common things that the world calls
+riches—gold, for instance—are of no value in obtaining untainted qualities; they are worthless, hollow, and without essence.
+	</div></div></td>
+		
+		<td><h1>༣༢༽རྒྱུ་ནོར་གྱི་མཆོག་འཕགས་པའི་ནོར་བདུན་ལུ་བརྩོན་དགོཔ།</h1> <!--Paragraph 32-->
+  <br><p>དད་དང་ཚུལ་ཁྲིམས་གཏོང་དང་ཐོས་པ་དང་།།<br>དྲི་མེད་ངོ་ཚ་ཤེས་དང་ཁྲེལ་ཡོད་དང་།།<br>ཤེས་རབ་ནོར་བདུན་ལཊ་པར་ཐུབ་པས་གསུངས།།<br>ནོར་གཞན་ཕལ་པ་དོན་མ་མཆིས་རྟོཊ་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE33"><h1>33) Specific trivial pursuits to be given up</h1></a><!--Paragraph 33-->
+  <p>Gambling, public spectacles and shows,<br>And indolence, bad company, strong drink,<br>
+  	And nightly prowls—these six will lead to lower realms<br>And damage your good name, so give them up.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE33" role="button" aria-expanded="false" aria-controls="collapseE33">
+    Explanation</a></p>
+<div class="collapse" id="collapseE33">
+  <div class="card card-body">
+	Playing dice and other gambling games, attending public spectacles, idling
+around with no inclination to do positive actions, keeping the company of
+evil friends, drinking, prowling around at night in order to steal—these six
+lead to rebirth in the lower realms in your next life, and in this life are
+causes for your reputation being spoilt. Therefore, Nagarjuna advises, give
+up these six.
+	</div></div></td>
+		
+		<td><h1>༣༣༽གྲགས་པ་ཉམས་པའི་རྒྱུ་དྲུག་སྤང་དགོཔ།</h1> <!--Paragraph 33-->
+  <br><p>རྒྱན་པོ་འགྱེད་དང་འདུས་ལ་ལྟ་བ་དང་།།<br>ལེ་ལོ་སྡིག་པའི་གྲོགས་ལ་བརྟེན་པ་དང་།།<br>ཆང་དང་མཚན་མོ་རྒྱུ་བ་ངན་སོང་བ།།<br>གྲགས་པ་ཉམས་པར་འགྱུར་བ་དེ་དྲུག་སྤོང་།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE34"><h1>34) The advantages of using the antidote</h1></a><!--Paragraph 34-->
+  <p>Of all great wealth, contentment is supreme<br>Said he who taught and guided gods and men<br>
+  	So always be content; if you know this<br>Yet have no wealth, true riches you’ll have found.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE34" role="button" aria-expanded="false" aria-controls="collapseE34">
+    Explanation</a></p>
+<div class="collapse" id="collapseE34">
+  <div class="card card-body">
+	Of all the valuable things there are, like gold and silver, the very greatest
+of riches is to be content and have little desire for such things, as the
+Teacher of gods and men, the Buddha Bhagavan.Therefore, in all circumstances be content. When you know contentment, even if you do not possess a little gold or other valuable things, you
+will be truly rich, because once content, you have achieved the very reason for acquiring things.
+	</div></div></td>
+		
+		<td><h1>༣༤༽རྒྱུ་ནོར་ལུ་ཆོག་ཤེས་འབད་དགོཔ།</h1> <!--Paragraph 34-->
+  <br><p>ནོར་རྣམས་ཀུན་གྱི་ནང་ནས་ཆོག་ཤེས་པ།།<br>རབ་མཆོག་ལགས་པར་ལྷ་མིའི་སྟོན་པས་གསུངས།།<br>ཀུན་ཏུ་ཆོག་ཤེས་མཛོད་ཅིག་ཆོག་མཁྱེན་ན།།<br>ནོར་མི་བདོག་ཀྱང་ཡང་དག་འབྱོར་པ་ལགས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE35"><h1>35) The disadvantages of not having that antidote</h1></a><!--Paragraph 35-->
+  <p>Kind Sir, to own a lot brings so much misery,<br>There’s no such grief for those with few desires.<br>
+  	The more the naga lords possess of heads,<br>The more their headaches, the more they have of cares.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE35" role="button" aria-expanded="false" aria-controls="collapseE35">
+    Explanation</a></p>
+<div class="collapse" id="collapseE35">
+  <div class="card card-body">
+	“Kind Sir,” says Nagarjuna, addressing the king (for he is someone who is
+easy to get along with), inasmuch as those who have a lot of things like
+gold and other possessions must suffer, first in acquiring them, then in
+guarding them, and finally in seeing them dispersed, those with few
+desires have no such suffering. To take an example, the more snake heads
+the supreme nagas (the naga kings) have, the more headaches they are
+liable to get. Some commentaries explain this metaphor as follows: the
+more heads the naga kings have, each head bearing a crown jewel, the
+greater the misery the naga kings experience guarding those jewels.
+	</div></div></td>
+		
+		<td><h1>༣༥༽ཆོག་ཤེས་དང་བྲལ་བའི་ཉེས་དམིགས།</h1> <!--Paragraph 35-->
+  <br><p>དེས་པ་བདོག་མང་ཇི་ལྟར་སྡུག་བསྔལ་བ།།<br>འདོད་པ་ཆུང་རྣམས་དེ་ལྟ་མ་ལགས་ཏེ།།<br>ཀླུ་མཆོག་རྣམས་ལ་མགོ་བོ་ཇི་སྙེད་པ།།<br>དེ་ལས་འབྱུང་བའི་སྡུག་བསྔལ་དེ་སྙེད་དོ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE36"><h1>36) Spouses to be avoided</h1></a><!--Paragraph 36-->
+  <p>A murderess who sides with enemies<br>A queen who holds her husband in contempt,<br>
+  	A thieving wife who steals the smallest thing—<br>It’s these three kinds of wife you must avoid.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE36" role="button" aria-expanded="false" aria-controls="collapseE36">
+    Explanation</a></p>
+<div class="collapse" id="collapseE36">
+  <div class="card card-body">
+	There are three kinds of wife you should avoid. One who naturally sides
+with one’s enemies and goes around with other men, and who out of jealousy wants to kill her husband, like a murderer. One who does not honor
+her husband, but treats him contemptuously, like a queen. And one who
+steals the smallest thing, not to speak of valuables, like a thief.
+	</div></div></td>
+		
+		<td><h1>༣༦༽གཉེན་རྐྱབ་མ་བཏུབ་པའི་ཨམ་སྲུ་ངན་པ་སྤང་དགོཔ།</h1> <!--Paragraph 36-->
+  <br><p>རང་བཞིན་དགྲར་འབྲེལ་གཤེད་མ་ལྟ་བུ་དང་།།<br>ཁྱིམ་ཐབ་བརྙེས་བགྱིད་རྗེ་མོ་ལྟ་བུ་དང་།།<br>ཆུང་ངུའང་རྐུ་བ་ཆོམ་རྐུན་ལྟ་བུ་ཡི།།<br>ཆུང་མ་གསུམ་པོ་དེ་དག་རྣམ་པར་སྤང་།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE37"><h1>37) Those to be taken as a wife</h1></a><!--Paragraph 37-->
+  <p>A wife who like a sister follows you,<br>Affectionate like a true and loving friend,<br>
+  	Supportive like a mother, obedient like a maid—<br>She must be honored like a family god.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE37" role="button" aria-expanded="false" aria-controls="collapseE37">
+    Explanation</a></p>
+<div class="collapse" id="collapseE37">
+  <div class="card card-body">
+	You might wonder, then, what kind of person you should marry. A wife
+who is like a sister emulating her brother: she follows her husband without scorning what he says. A wife who is like a close friend with whom one
+gets on very well and who takes care of one: she is a true friend. A wife
+who is like a mother wanting to help her child: her desire is to help her
+husband. And a wife who is like a maid obeying when one makes her
+happy: she submits to one’s authority. Such wives will not dishonor one’s
+family and so are to be relied upon or honored like a family god.
+
+	</div></div></td>
+		
+		<td><h1>༣༧༽བུད་མེད་བཟང་པོ་བསྟེན་ཚུལ།</h1> <!--Paragraph 37-->
+  <br><p>སྲིང་མོ་བཞིན་དུ་རྗེས་མཐུན་གང་ཡིན་དང་།།<br>མཛའ་མོ་བཞིན་དུ་སྙིང་ལ་འབབ་པ་དང་།།<br>མ་བཞིན་ཕན་པར་འདོད་དང་བྲན་མོ་བཞིན།།<br>དབང་གྱུར་གང་ཡིན་རིགས་ཀྱི་ལྷ་བཞིན་བཀུར།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE38"><h1>38) Giving up attachment to food</h1></a><!--Paragraph 38-->
+  <p>Take food as medicine, in the right amount,<br>Without attachment, without hatefulness:<br>
+  	Don’t eat for vanity, for pride or ego’s sake,<br>Eat only for your body’s sustenance.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE38" role="button" aria-expanded="false" aria-controls="collapseE38">
+    Explanation</a></p>
+<div class="collapse" id="collapseE38">
+  <div class="card card-body">
+	When you eat food, it should be in the right amount, like medicine that
+does the body good. In doing so, use food without an attitude of attachment or hatred, reflected in the way you eat: do not eat because of vanity, wanting to be tough, nor because of hatred, arrogantly thinking, “I will
+build up my physical strength and beat up my enemies,” nor in order to
+strengthen your various limbs or in order to take care of your body, to
+take care of “me.” Eat simply to sustain your body as a means for accomplishing positive actions.
+	</div></div></td>
+		
+		<td><h1>༣༨༽བཟའ་བཏུང་ལུ་མཚམས་ཚོད་ཀྱི་ཐོག་ལས་ལོངས་སྤྱོད་ཚུལ།</h1> <!--Paragraph 38-->
+  <br><p>ཁ་ཟས་སྨན་དང་འདྲ་བར་རིག་པ་ཡིས།།<br>འདོད་ཆགས་ཞེ་སྡང་མེད་པར་བསྟེན་བགྱི་སྟེ།།<br>རྒྱཊ་ཕྱིར་མ་ལཊ་བསྙེམས་པའི་ཕྱིར་མ་ལགས།།<br>འཚག་ཕྱིར་མ་ལཊ་ལུས་གནས་འབའ་ཞིག་ཕྱིར།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE39"><h1>39) Giving up attachment to sleep</h1></a><!--Paragraph 39-->
+  <p>O Knowledgeable One, recite all day<br>And in the first and last watch of the night.<br>
+  	Then in between these two sleep mindfully<br>So that your slumbers are not spent in vain.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE39" role="button" aria-expanded="false" aria-controls="collapseE39">
+    Explanation</a></p>
+<div class="collapse" id="collapseE39">
+  <div class="card card-body">
+	Great being, you who know what to do and what not to do, having spent
+the whole of the day and the first and last of the three watches of the
+night reciting, meditating, and so on, in the middle of the night too, while
+you are asleep, do not let your slumber be fruitless or pointless but keep
+mindful, thinking that you will rise quickly and put your efforts into practicing virtue. In this manner, sleep in between these first and last watches:
+as a result of your attitude, your sleep will become positive.
+	</div></div></td>
+		
+		<td><h1>༣༩༽དོན་མེད་ཀྱི་གཉིད་སྤང་ཚུལ།</h1> <!--Paragraph 39-->
+  <br><p>རིག་པའི་བདག་ཉིད་ཉིན་པར་མཐའ་དག་དང་།།<br>མཚན་མོའི་ཐུན་གྱི་སྟོད་སྨད་བཟླས་ནས་ནི།།<br>མནལ་ཚེའང་འབྲས་བུ་མེད་པར་མི་འགྱུར་བར།།<br>དྲན་དང་ལྡན་པར་དེ་དག་རབ་ཏུ་མནོལ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE40"><h1>40) Practicing the four boundless qualities as an aid to concentration</h1></a><!--Paragraph 40-->
+  <p>Constantly and perfectly reflect<br>On love, compassion, joy, impartiality.<br>
+  	And should you not attain the higher state,<br>At least you will find bliss in Brahma’s world.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE40" role="button" aria-expanded="false" aria-controls="collapseE40">
+    Explanation</a></p>
+<div class="collapse" id="collapseE40">
+  <div class="card card-body">
+	Focusing on all sentient beings, practice the four boundless qualities: love,
+which is the wish that they be happy; compassion, the wish that they be
+free from suffering; sympathetic joy, which is to feel happy when they
+are happy; and impartiality, which is to treat them impartially as equals,
+without attachment or aversion.
+Of these four, the meaning of the term “boundless love” is that one
+focuses on boundless sentient beings (as the object of concentration) and
+that boundless merit comes to the meditator.
+For compassion and the others there are three categories: compassion
+focusing on sentient beings; focusing on phenomena; and without concepts. The first is that of ordinary beings and takes the form of wishing that
+all may be free from suffering. The second, focusing on phenomena, is
+that of sublime beings of the Shravaka and Pratyekabuddha vehicles who,
+since they have realized the no- self of the individual, designate merely
+the phenomena of the aggregates as sentient beings; it takes the form of
+the wish that they may themselves be free from suffering. The third, being
+without concepts, takes the form of viewing sentient beings as illusion- like
+through realizing the no- self of phenomena, and wishing they be free
+from suffering. This is the compassion that the sublime beings of the Great
+Vehicle have.
+According to The Ornament of the Mahayana Sutras, the Shravakas
+and Pratyekabuddhas do have realization of the no- self of phenomena, in
+which case the last two categories belong to all the sublime beings of the
+three vehicles. They have one essence but different aspects.
+How should one meditate on these four boundless qualities? Divide
+beings into three categories: friends, enemies, and those that are neither.
+Begin by concentrating on your parents, relatives, and friends, and meditate by wishing that they may meet with happiness and so forth. After
+that do the same focusing on beings who are neither your friends nor your
+enemies. Finally, meditate focusing on all those for whom you feel enmity.
+The meditation is said to be perfect and complete when one’s enemies and
+one’s relatives and friends become the same.
+As for the scope of the meditation, concentrate first on the beings in
+Jambudvipa, then on those in the universe of a billion worlds, and then on
+all the beings filling the whole of space.
+Meditate constantly and well on these four boundless qualities and
+through the wisdom of these boundless qualities you will attain nirvana.
+Even if you do not attain the higher state of nirvana immediately, you
+will gain the happiness of the first Brahma world.
+	</div></div></td>
+		
+		<td><h1>༤༠༽ཚད་མེད་བཞི།</h1> <!--Paragraph 40-->
+  <br><p>བྱམས་དང་སྙིང་རྗེ་དག་དང་དགའ་བ་དང་།།<br>བཏང་སྙོམས་རྟག་ཏུ་ཡང་དག་བསྒོམ་མཛོད་ཅིག།<br>གོང་མ་བརྙེས་པར་མ་གྱུར་དེ་ལྟ་ནའང་།།<br>ཚངས་པའི་འཇིག་རྟེན་བདེ་བ་ཐོབ་པར་འགྱུར།།</p> <audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE41"><h1>41) The actual practice, meditating on the four concentrations</h1></a><!--Paragraph 41-->
+  <p>The four samadhis, which in turn discard<br>Pursuit of pleasure, joy and bliss and pain,<br>
+  	Will lead to fortune equal to the gods’<br>In Brahma, Light, Great Virtue, or Great Fruit.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE41" role="button" aria-expanded="false" aria-controls="collapseE41">
+    Explanation</a></p>
+<div class="collapse" id="collapseE41">
+  <div class="card card-body">
+	The first concentration comprises the antidote branch—discursive thinking and subtle analysis—used to abandon the pursuit of pleasure, that is
+to say, yearning for pleasure and wanting to get rid of anything that irritates one; the joy and bliss that arise from solitude; and the one- pointed
+concentration characterized by the latter.
+The second concentration comprises the antidote branch—a very clear
+mind—used to abandon analysis; the joy and bliss that come from concentration; and the one- pointed concentration characterized by the latter.
+The third concentration comprises the antidote branch—mindfulness,
+vigilance, and evenness—used to abandon joy; bliss; and the one- pointed
+concentration characterized by the latter.
+The fourth concentration comprises the antidote branch—perfect mindfulness and evenness—used to completely eliminate bliss and sufferings;
+neutrality of feeling; and the one- pointed concentration characterized by
+the latter.
+By meditating on these four causal concentrations, Nagarjuna says, one
+attains the same fortunate rebirths as the gods of the four resultant concentrations, which are subdivided into lesser, middling, and greater categories as follows. The realm of the first concentration consists of The Pure,
+Priests of Brahma and Great Pure Ones;37 the realm of the second concentration likewise comprises Dim Light, Measureless Light, and Clear Light;
+that of the third concentration is divided into Lesser Virtue, Limitless
+Virtue, and Flourishing Virtue; and the realm of the fourth concentration
+consists of Cloudless, Merit- Born, and Great Result.
+	</div></div></td>
+		
+		<td><h1>༤༡༽བསམ་གཏན་བཞིའི་ཐོག་ལས་ཚོགས་ལམ་རྒྱུད་ལ་སྐྱེད་ཚུལ།</h1> <!--Paragraph 41-->
+  <br><p>འདོད་སྤྱོད་དགའ་དང་བདེ་དང་སྡུག་བསྔལ་དག།<br>རྣམ་པར་སྤངས་པའི་བསམ་གཏན་བཞི་པོ་ཡིས།།<br>ཚངས་དང་འོད་གསལ་དག་དང་དགེ་རྒྱས་དང་།།<br>འབྲས་བུ་ཆེ་ལྷ་རྣམས་དང་སྐལ་མཉམ་ཐོབ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE42"><h1>42) The relative gravity of positive and negative actions</h1></a><!--Paragraph 42-->
+  <p>Great good and evil deeds are of five kinds,<br>Determined by their constancy, their zeal,<br>
+  	Their lack of counteragent, their perfect fields.<br>So strive in this respect to practice good.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE42" role="button" aria-expanded="false" aria-controls="collapseE42">
+    Explanation</a></p>
+<div class="collapse" id="collapseE42">
+  <div class="card card-body">
+	There are five great kinds of positive or negative actions. (1) Actions that
+are performed constantly (with a constant underlying attitude) and that
+are special in terms of their application. (2) Those that are done with great
+determination (as the attitude of the moment) and that are special in terms
+of their intention. (3) Those that have nothing to counter them, that is, an
+opposing action that can destroy them, and are special in terms of counteragent. And beneficial or harmful acts that are special in terms of their
+field, this being of two kinds: (4) “beneficial fields” such as parents and
+teachers and in particular bears, monkeys, and so forth that have helped
+one as in the stories of the Buddha’s previous lives; and (5) “fields who
+have the most essential qualities,” that is, the Three Jewels and those who
+have risen out of the samadhi of cessation.
+Make an effort, therefore, to avoid great negative actions and to practice great positive actions.
+
+	</div></div></td>
+		
+		<td><h1>༤༢༽དགེ་བ་སྟོབས་ཆེ་དྲགས་འབད་བསྒྲུབ་དགོ་པའི་སྐུལ་མ།</h1> <!--Paragraph 42-->
+  <br><p>རྟག་དང་མངོན་པར་ཞེན་དང་གཉེན་པོ་མེད།།<br>ཡོན་ཏན་གཙོ་ལྡན་གཞི་ལས་བྱུང་བའི་ལས།།<br>དགེ་དང་མི་དགེ་རྣམ་ལྔ་ཆེན་པོ་སྟེ།།<br>དེ་བས་དགེ་བ་སྤྱོད་ལ་བརྩོན་པར་བགྱི།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE43"><h1>43) Cultivating powerful positive actions as antidotes to negative acts</h1></a><!--Paragraph 43-->
+  <p>A pinch of salt can give its salty taste<br>To a little water, but not to the Ganges stream.<br>
+  	So know that, likewise, minor evil deeds<br>Can never change a mighty source of good.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE43" role="button" aria-expanded="false" aria-controls="collapseE43">
+    Explanation</a></p>
+<div class="collapse" id="collapseE43">
+  <div class="card card-body">
+	Just as a little salt—a few fractions of a measure—can make a small
+amount of water taste salty but cannot change a huge river like the
+Ganges, know that in the same way even a small negative action can harm
+someone whose positive deeds are weak but cannot harm anyone who has
+frequently performed an immensely positive action, vast in scope. Here,
+Nagarjuna is instructing us to apply ourselves to powerful positive actions
+repeatedly on a vast scale.
+	</div></div></td>
+		
+		<td><h1>༤༣༽དགེ་བ་སྟོབས་ཆེན་པོའི་ནུས་པ།</h1> <!--Paragraph 43-->
+  <br><p>ལན་ཚྭ་སྲང་འགས་ཆུ་ནི་ཉུང་ངུ་ཞིག།<br>རོ་སྒྱུར་བགྱིད་ཀྱི་གངྒཱའི་ཀླུང་མིན་ལྟར།།<br>དེ་བཞིན་སྡིག་པའི་ལས་ནི་ཆུང་ངུ་ཡང་།།<br>དགེ་བའི་རྩ་བ་ཡངས་ལ་མཁྱེན་པར་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE44"><h1>44) How to avoid the things that hinder concentration in particular</h1></a><!--Paragraph 44-->
+  <p>Wildness and remorse, and hateful thoughts,<br>And dullness- somnolence, and yearning lust,<br>
+  	And doubt are hindrances—please know these five<br>Are thieves that steal the gem of virtuous deeds.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE44" role="button" aria-expanded="false" aria-controls="collapseE44">
+    Explanation</a></p>
+<div class="collapse" id="collapseE44">
+  <div class="card card-body">
+	There now follows an explanation of how the five “hindrances” are the
+enemies of the samadhis, perfect freedoms, and so forth, and must therefore be assiduously avoided.
+Wildness, where the mind proceeds out towards objects that attract it,
+and remorse, where one thinks of evil acts one has done. These come under
+the same sphere as movement and so their antidote is sustained calm. They
+are nourished by four things: thinking about one’s relatives, thinking
+about one’s country, thinking that one will not die, and remembering the
+games, laughs, and good times one enjoyed in the past. Since wildness and
+remorse are both nourished by the same things, they are counted as a single hindrance.
+Malice, which is the agitation in the mind caused by things that arouse
+hatred. In the explanation that follows on how discipline is hindered, it is
+grouped with craving (see below), but in the context of the five hindrances
+such hatred is counted as a single hindrance. Its antidote is patience.
+Dullness, in which body and mind are disinclined to meditate and one
+feels in low spirits, and somnolence, where the mind, powerless, withdraws and folds in on itself. These come under the same sphere as dull-
+ wittedness and lack of clarity and are therefore counted as one. Their
+antidote is clarity. They are nourished by five things: feeling thick—
+unclear, heavy, and disconnected; unhappiness; stretching; indigestion; and
+feeling low- spirited.
+An inclination—through craving—for the five pleasures of the senses
+such as food and sex. This is counted as one in the context of the five hindrances, though as a hindrance to discipline it is taught as being classed
+with malice (see above). Its antidote is to meditate on ugliness and give up
+attachment.
+Indecision, where one is of two minds concerning liberation and the
+path to liberation.
+Know that these five hindrances are thieves that rob you of the jewel
+of virtue, and avoid them, advises Nagarjuna.
+Craving and hatred both adversely affect the superior training in discipline. The reasons for this are, respectively, that when one is influenced by
+craving for pleasure one will not take up discipline properly in the first
+place; and that once one has taken it up, when other people admonish one
+to follow the precepts correctly, one gets angry and cannot accomplish
+anything properly in accord with the Dharma.
+Dullness and somnolence both impair superior concentration because
+when one meditates on the causes of sustained calm—the four boundless
+qualities and so forth—they make the mind low- spirited.
+Wildness and remorse adversely affect superior wisdom because when
+one meditates on the reasons for concentrating they cause the mind to be
+distracted.
+Indecision adversely affects both one- pointedness and wisdom because
+when one meditates on the causes of the equanimity that is the union of
+sustained calm and profound insight, as a result of doubt one cannot reach
+a decision and one is unable to settle in equanimity.
+Since they obscure the samadhis and perfect freedoms and so forth, or
+the three precious trainings, it has been said, “Be diligent in avoiding the
+five hindrances.”
+	</div></div></td>
+		
+		<td><h1>༤༤༽སྒྲིབ་པ་ལྔ་སྤང་དགོཔ།</h1> <!--Paragraph 44-->
+  <br><p>རྒོད་དང་འགྱོད་དང་གནོད་སེམས་རྨུགས་པ་དང་།།<br>གཉིད་དང་འདོད་ལ་འདུན་དང་ཐེ་ཚོམ་སྟེ།།<br>སྒྲིབ་པ་ལྔ་པོ་དེ་དག་དགེ་བའི་ནོར།།<br>འཕྲོག་པའི་ཆོམ་རྐུན་ལགས་པར་མཁྱེན་པར་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE45"><h1>45) What one has to adopt: confidence and the other elements</h1></a><!--Paragraph 45-->
+  <p>With faith and diligence and mindfulness,<br>And concentration, wisdom, five in all,<br>
+  	You must strive hard to reach the “highest state”:<br>As “powers” these “forces” take you to the “peak.”</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE45" role="button" aria-expanded="false" aria-controls="collapseE45">
+    Explanation</a></p>
+<div class="collapse" id="collapseE45">
+  <div class="card card-body">
+	Five elements are described in this verse. Confidence, namely confidence
+in the Four Noble Truths; diligence, that is to say, genuine joy in adoption
+and rejection related to the Four Noble Truths; mindfulness—never letting
+the objects to be meditated on slip one’s mind; concentration, that is to say,
+ one- pointed focus supported by mindfulness of the four truths; and wisdom, which perfectly discerns them when one settles evenly in concentration. At the time these five become the direct cause leading to the sublime
+path we speak of the supreme mundane level.
+At the stage of “acceptance” they are referred to as the five irresistible forces, for they cannot be
+overcome by adverse factors. Apply yourself assiduously to these and get
+used to them. They are first referred to here as irresistible forces for the
+stage of “acceptance,” but at the stage of “warmth” they are known as
+“powers” because they make one more powerful for clearly seeing the
+truth. As these powers increase one reaches the “peak,” because one’s
+sources of good become unwavering. This verse, therefore, is an instruction on being diligent.
+	</div></div></td>
+		
+		<td><h1>༤༥༽སྦྱོར་ལམ་དངོས་ཀྱི་དབང་སྟོབས་ལྔ་བཤད་པ།</h1> <!--Paragraph 45-->
+  <br><p>དད་དང་བརྩོན་འགྲུས་དག་དང་དྲན་པ་དང་།།<br>ཏིང་འཛིན་ཤེས་རབ་ཆོས་མཆོག་ལྔ་ཉིད་དེ།།<br>འདི་ལ་མངོན་བརྩོན་མཛོད་ཅིག་འདི་དག་ནི།།<br>སྟོབས་དབང་ཞེས་བགྱི་རྩེ་མོར་གྱུར་པའང་ལགས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE46"><h1>46) What one has to abandon: how to get rid of arrogance by means of an antidote</h1></a><!--Paragraph 46-->
+  <p>“I’m not beyond my karma, the deeds I’ve done;<br>I’ll still fall ill, age, die, and leave my friends.”<br>
+  	Think like this again and yet again<br>And with this remedy avoid all arrogance.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE46" role="button" aria-expanded="false" aria-controls="collapseE46">
+    Explanation</a></p>
+<div class="collapse" id="collapseE46">
+  <div class="card card-body">
+	“I will be sick, I will grow old, I will die, I will be separated from those I
+love, my relations and so forth. In such manner, the fully ripened effect of
+my actions will come to me and to no one else, and I am therefore not
+above depending on what I did in former lives.” To think like this again
+and again is the antidote to such things as arrogance: make every effort
+not to become arrogant by meditating on this antidote.
+	</div></div></td>
+		
+		<td><h1>༤༦༽འཁོར་བ་ལུ་སེམས་སྐྱོ་དགོ་པའི་ཐབས་བསྒྲུབ་དགོ་པའི་སྐུལ་མ།</h1> <!--Paragraph 46-->
+  <br><p>ན་རྒ་འཆི་སྡུག་བྲལ་དང་དེ་བཞིན་དུ།།<br>ལས་ནི་བདག་གིར་བྱས་ལས་མ་འདས་ཞེས།།<br>དེ་ལྟར་ཡང་ནས་ཡང་དུ་སེམས་པ་ནི།།<br>དེ་ཡི་གཉེན་པའི་སྒོ་ནས་རྒྱགས་མི་འགྱུར།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE47"><h1>47) The right view of worldly people, which is the root of both higher rebirth and lasting happiness</h1></a><!--Paragraph 47-->
+  <p>If higher birth and freedom is your quest,<br>You must become accustomed to right views.<br>
+  	Those who practice good with inverse views<br>Will yet experience terrible results.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE47" role="button" aria-expanded="false" aria-controls="collapseE47">
+    Explanation</a></p>
+<div class="collapse" id="collapseE47">
+  <div class="card card-body">
+	Nagarjuna begins with the following exhortation: If you truly seek the
+higher realms (the abodes of gods and men) and liberation (that is to say,
+the levels and paths leading to omniscience), you must constantly get
+used to the right view; for confidence in the law of karma, with the relative view concerning subject and object, is the cause of higher rebirth,
+while the wisdom that realizes the true nature of subject and object is the
+cause of liberation.
+What fault, you might ask, would there be in not having the right view?
+People who have wrong views with regard to actions, cause and effect,
+completely destroy their sources of good. At the same time, however many
+positive deeds they may perform, such as acts of generosity, those who
+are very attached to material things, and who do not have the view or realization that they are empty, possess the terrible cause of rebirth in samsara as the fully ripened effect of all their actions.
+	</div></div></td>
+		
+		<td><h1>༤༧༽ལས་འབྲས་ལུ་ཡིད་ཆེས་བསྐྱེད་ནིའི་ཐབས་བསྒྲུབ་དགོ་པའི་སྐུལ་མ།</h1> <!--Paragraph 47-->
+  <br><p>གལ་ཏེ་མཐོ་རིས་ཐར་པ་མངོན་བཞེད་ན།།<br>ཡང་དག་ལྟ་ལ་གོམས་པ་ཉིད་དུ་མཛོད།།<br>གང་ཟག་ལོག་པར་ལྟ་བས་ལེགས་སྤྱད་ཀྱང་།།<br>ཐམས་ཅད་རྣམ་པར་སྨིན་པ་མི་བཟད་ལྡན།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE48"><h1>48) The right supramundane view that leads to lasting happiness</h1></a><!--Paragraph 48-->
+  <p>Know this truth: that men are ever sad,<br>Impermanent, devoid of self, impure.<br>
+  	Those who do not have close mindfulness,<br>Their view four times inverted, head for ruin.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE48" role="button" aria-expanded="false" aria-controls="collapseE48">
+    Explanation</a></p>
+<div class="collapse" id="collapseE48">
+  <div class="card card-body">
+	Looking at things with the three kinds of wisdom, know that human
+beings are in truth unhappy on account of the three types of suffering;44
+they are impermanent with each instant that passes; devoid of self, since
+there is no doer; and, as regards their flesh, bones, blood, and so forth,
+impure. Those who are not closely mindful of these four and who do not
+examine them with wisdom view things in four mistaken ways: they see
+their impure bodies as pure, the suffering they experience as happiness, the
+impermanent mind as permanent, and selfless phenomena as a self. Such
+people are destroyed by the suffering of samsara and the lower realms, so
+for this reason you must be diligent in closely applying mindfulness.
+	</div></div></td>
+		
+		<td><h1>༤༨༽འཇིག་རྟེན་ལས་འདས་པའི་ལྟ་བ་ལུ་བརྩོན་དགོཔ།</h1> <!--Paragraph 48-->
+  <br><p>མི་ནི་ཡང་དག་ཉིད་དུ་མི་བདེ་ཞིང་།།<br>མི་རྟག་བདག་མེད་མི་གཙང་རིག་པར་བགྱི།།<br>དྲན་པ་ཉེ་བར་མ་གཞག་རྣམས་ཀྱིས་ནི།།<br>ཕྱིན་ཅི་ལོག་བཞིར་ལྟ་བ་ཕུང་ཁྲོལ་བ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE49"><h1>49) Ascertaining the no- self of the individual</h1></a><!--Paragraph 49-->
+  <p>Form is not the self, the Buddha taught,<br>And self does not have form, nor dwell in form,<br>
+  	While form dwells not in self. Thus you must see<br>The four remaining aggregates are empty too.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE49" role="button" aria-expanded="false" aria-controls="collapseE49">
+    Explanation</a></p>
+<div class="collapse" id="collapseE49">
+  <div class="card card-body">
+	If there is a single self, is its nature that of the aggregates—form and the
+rest? Or does it exist as something else? The answer to the first question
+is “No.” The scriptural authority for this is a sutra, which states, “Form is
+not the self ...,” and continues until, “... consciousness is not the self.”45
+Reasoning also applies, as follows. Form is not the self; if the self were the
+same as form and the other aggregates, it would have to be impermanent
+and multiple. And if you assert that form and the other aggregates exist
+substantially, then the self must exist substantially and the clinging to an
+“I” would be the subject of a substantial thing, in which case you would
+be viewing things correctly and it would therefore be impossible to use an
+antidote to get rid of the seed.One might ask, are form and the rest something else? Does the self use
+form and the other aggregates as a support in the same way that Devadatta—that is, any person—makes use of his wealth, cattle, bed, trees, and
+so forth? In the first place, this is not the case, for the scriptures say, “The
+self does not possess form ...” and so on to, “... it does not possess consciousness.” And reasoning shows that, unlike Devadatta who has control
+over his cattle, the self does not possess form and so on as things to be
+controlled, because we can see that form and the other aggregates, without the self wanting it, change into something else and perish.
+Aggregates that are different from the self are also not possible from a
+second point of view. Form and the rest are not multiple locations for the
+self to dwell in, as the scriptures show: “The self does not dwell in form
+...” and so on to, “... the self does not dwell in consciousness.” And reason
+tells us that, unlike Devadatta sitting on a woven mat, the self cannot dwell
+in form and the other aggregates as though using them as a support; for
+if that were the case, the aggregates being impermanent, it would follow
+that the self, too, would be impermanent.
+There is yet a third point of view, stated in the scriptures as follows:
+“Form does not dwell in the self ...” and so on to, “... consciousness does
+not dwell in the self.” The reasoning is that the aggregates do not dwell in
+the self, supported by it in the same way that a tree is supported by the
+earth, because aggregates taking the support of a permanent self could
+never perish. Furthermore, their birth and destruction would depend on
+the self and this does not happen because one conceives of the creation
+and destruction of outer forms as occurring without a self.
+This is how we investigate form. In the same way, you should also realize profound emptiness, as it is, in the four remaining aggregates (feeling
+and so forth), using scriptural authority and reason, as explained above, to
+show that there is no self that is of the same nature as the aggregates or
+different from them.
+Explaining things the other way round, it is said in the sutras that for
+each of the five aggregates there are four views—the view of form as the
+self, and so on—making twenty extreme views in all. The Buddha taught
+that the antidote to these is “Form is not the self.”
+	</div></div></td>
+		
+		<td><h1>༤༩༽འཇིག་རྟེན་ལས་འདས་པའི་ལྟ་བ་ཡང་དག་པ་སྒོམ་ཐངས།</h1> <!--Paragraph 49-->
+  <br><p>གཟུགས་ནི་བདག་མ་ཡིན་ཞེས་གསུངས་ཏེ་བདག།<br>།གཟུགས་དང་ལྡན་མིན་གཟུགས་ལ་བདག་གནས་མིན།།<br>བདག་ལ་གཟུགས་མི་གནས་ཏེ་དེ་བཞིན་དུ།།<br>ཕུང་པོ་ལྷག་མ་བཞི་ཡང་སྟོང་རྟོགས་བགྱི།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE50"><h1>50) Investigating the aggregates that are the support of the self</h1></a><!--Paragraph 50-->
+  <p>The aggregates are not a simple whim,<br>From neither time nor nature do they come,<br>
+  	Nor by themselves, from God, or without cause;<br>Their source, you ought to know, is ignorance,<br>
+	From karmic deeds and craving have they come.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE50" role="button" aria-expanded="false" aria-controls="collapseE50">
+    Explanation</a></p>
+<div class="collapse" id="collapseE50">
+  <div class="card card-body">
+	Form and the other aggregates do not happen adventitiously, merely out
+of wishful thinking, with no dependence on other conditions: the aggregates are not a result of one’s own fanciful thinking, because they arise
+from individual causes and conditions. Neither do they arise from something eternal in time, as the Eternalists would claim, since there is no time
+that is independent of causes and conditions. Since a result cannot be produced from a permanent entity, they do not happen from transformation
+by a single permanent nature, the prakriti (“primal substance”), in which
+rajas, tamas, and sattva are in equilibrium, as the Samkhyas claim. And
+since a fruit cannot be produced from a seed without the seed being altered
+and without depending on conditions, they do not happen by themselves,
+as the Mimamsakas hold. They do not come from the Naiyayika School’s
+Ishvara,
+ because a result comes from a cause that has to precede it. Neither do they come into being without a cause: if they arose without a
+cause, they would either have had to have been there all the time or never
+ever be!
+Then what cause do they come from? To take an example, just as a shoot
+is produced by watering a healthy seed covered with manure, know that
+the aggregates come from powerful karmic actions covered by unknowing—that is to say, ignorance—and, as it were, moistened by craving
+	</div></div></td>
+		
+		<td><h1>༥༠༽བདག་རྟེན་ཕུང་པོའི་འབྱུང་ཁུངས།</h1> <!--Paragraph 50-->
+  <br><p>ཕུང་པོ་འདོད་རྒྱལ་ལས་མིན་དུས་ལས་མིན།།<br>རང་བཞིན་ལས་མིན་ངོ་བོ་ཉིད་ལས་མིན།།<br>དབང་ཕྱུག་ལས་མིན་རྒྱུ་མེད་ཅན་མིན་ཏེ།།<br>མི་ཤེས་ལས་དང་སྲེད་ལས་བྱུང་རིག་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE51"><h1>51) The three fetters, which are incompatible with the path</h1></a><!--Paragraph 51-->
+  <p>To feel that one is ethically superior,<br>To view one’s body wrongly, and to doubt—<br>
+  	With these three fetters, you should understand,<br>The way through freedom’s city gates is blocked.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE51" role="button" aria-expanded="false" aria-controls="collapseE51">
+    Explanation</a></p>
+<div class="collapse" id="collapseE51">
+  <div class="card card-body">
+	Ethical superiority, which is to consider that discipline and ascetic practices based on wrong views purify or lead to liberation; the view of the
+transitory composite, whereby one mistakenly regards one’s body, the five
+causal aggregates, as “I” and “mine”; and doubt, where one is of two minds
+about liberation and the path of liberation, are fetters that bind one.50
+Because of the view of the transitory composite, one has no wish to proceed
+to liberation. Because of superiority one mistakes the path. And because of
+doubt one meets with hindrances. Know that these three close the gates of
+the city of liberation, and rid yourself of them.
+	</div></div></td>
+		
+		<td><h1>༥༡༽ཀུན་སྦྱོར་གསུམ་སྤང་དགོཔ།</h1> <!--Paragraph 51-->
+  <br><p>ཚུལ་ཁྲིམས་བརྟུལ་ཞུགས་མཆོག་འཛིན་རང་ལུས་ལ།།<br>ཕྱིན་ཅི་ལོག་པར་ལྟ་བ་ཐེ་ཚོམ་སྟེ།།<br>ཀུན་ཏུ་སྦྱོར་བ་འདི་གསུམ་ཐར་པ་ཡི།།<br>གྲོང་ཁྱེར་སྒོ་སྒེགས་ལགས་པར་མཁྱེན་པར་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE52"><h1>52) Diligence, which is a favorable condition</h1></a><!--Paragraph 52-->
+  <p>Freedom will depend on you alone<br>And there is no one else, no friend can help.<br>
+  	So bring endeavor to the Four Noble Truths<br>With study, discipline, and concentration.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE52" role="button" aria-expanded="false" aria-controls="collapseE52">
+    Explanation</a></p>
+<div class="collapse" id="collapseE52">
+  <div class="card card-body">
+	What we call liberation is nothing other than the mind being free from the
+bonds of afflictive emotions. It depends on training by oneself on the path
+of liberation. For that, there is no question of being assisted by someone
+else; you have to endeavor on your own. listening many times to the Buddha’s teachings relating to
+the Four Noble Truths and, with determination to be free, observing
+whichever discipline you can of the seven kinds of pratimoksha vows—
+those of the bhikshu or bhikshuni, male or female shramanera, male or
+female upasaka, and woman novice. By means of the one- pointed concentration of the four concentrations—The Pure, Great Pure Ones, and so
+forth—direct your attention to the Four Noble Truths—the truth of suffering and the rest—and meditate on their true nature: in relative truth,
+their sixteen subdivisions beginning with impermanence; and in absolute
+truth, emptiness free from all conceptual extremes. Be diligent in knowing these crucial points of what to adopt and what to reject.
+	</div></div></td>
+		
+		<td><h1>༥༢༽ཐར་པའི་ལམ་ལུ་རང་གིས་བརྩོན་དགོཔ།</h1> <!--Paragraph 52-->
+  <br><p>ཐར་པ་རང་ལ་རག་ལས་འདི་ལ་ནི།།<br>གཞན་གྱིས་གྲོགས་བགྱིར་ཅི་ཡང་མ་མཆིས་ཀྱི།།<br>ཐོས་དང་ཚུལ་ཁྲིམས་བསམ་གཏན་ལྡན་པ་ཡིས།།<br>བདེན་པ་རྣམ་པ་བཞི་ལ་འབད་པར་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE53"><h1>53) A general exposition of the three trainings</h1></a><!--Paragraph 53-->
+  <p>Train always in superior discipline,<br>Superior wisdom, and superior mind.<br>
+	  Monks’ vows exceed a hundred and five tens,<br>Yet they are all included in these three.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE53" role="button" aria-expanded="false" aria-controls="collapseE53">
+    Explanation</a></p>
+<div class="collapse" id="collapseE53">
+  <div class="card card-body">
+	The three trainings are: superior discipline, which is essentially the avoidance—dedicated entirely to going beyond suffering—of the seven negative
+actions;superior wisdom, which is the realization of the two kinds of
+ no- self; and superior concentration,
+which essentially comprises the four
+concentrations consistent with and leading to the sublime path. Because
+they constitute a complete and unerring method for attaining liberation,
+you should constantly train in them. They are called “superior” because
+their purpose is to take one beyond suffering. Since the more than two
+hundred and fifty precepts, that is, the two hundred and fifty- three vows
+of a bhikshu taught in the pratimoksha—the four radical defeats, the thirteen residual faults, the thirty downfalls requiring rejection, the ninety
+“mere downfalls,” the four faults to be specifically confessed, and the one
+hundred and twelve wrong actions—come under discipline, they are fully
+included in the three trainings. So make an effort to train in these.
+	</div></div></td>
+		
+		<td><h1>༥༣༽ཤེས་རབ་ཀྱི་མཐུན་ཕྱོགས་བསླབ་པ་གསུམ་ལུ་བརྩོན་དགོཔ།</h1> <!--Paragraph 53-->
+  <br><p>ལྷག་པའི་ཚུལ་ཁྲིམས་ལྷག་པའི་ཤེས་རབ་དང་།།<br>ལྷག་པའི་སེམས་ལ་རྟག་ཏུ་བསླབ་པར་བགྱི།།<br>བསླབ་པ་བརྒྱ་རྩ་ལྔ་བཅུ་ལྷག་གཅིག་ནི།།<br>གསུམ་པོ་འདི་ནང་ཡང་དག་འདུ་བར་འགྱུར།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE54"><h1>54) How to turn the mind away from the things of this life</h1></a><!--Paragraph 54-->
+  <p>My lord, the Buddha taught close mindfulness<br>Of body as the single path to tread.<br>
+  	Hold fast and guard it well, for all the Dharma<br>Is destroyed by loss of mindfulness.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE54" role="button" aria-expanded="false" aria-controls="collapseE54">
+    Explanation</a></p>
+<div class="collapse" id="collapseE54">
+  <div class="card card-body">
+	Mighty Lord, says Nagarjuna addressing the king, in all circumstances,
+whatever you are doing—standing up, sitting down, and so on—strictly
+maintain perfect mindfulness of phenomena including the body and so
+forth.55 This, the Sugata has shown, is the one way to proceed, the certain
+path for easily attaining liberation. Therefore, because this mindfulness of the body and so on is extremely
+important, hold fast and guard it well. Otherwise, if you fail to do so and
+mindfulness is diminished, all virtuous practice will also be destroyed,
+not to mention any chance of attaining nirvana.
+
+	</div></div></td>
+		
+		<td><h1>༥༤༽ལམ་བསྒོམ་པའི་རྩ་བ་དྲན་པ་གཟུང་དགོཔ།</h1> <!--Paragraph 54-->
+  <br><p>དབང་ཕྱུག་ལུས་གཏོགས་དྲན་པ་བདེ་གཤེགས་ཀྱིས།།<br>བགྲོད་པ་གཅིག་པའི་ལམ་དུ་ཉེ་བར་བསྟན།།<br>དེ་ནི་བསྒྲིམས་ནས་མངོན་པར་བསྲུང་བགྱི་སྟེ།།<br>།དྲན་པ་ཉམས་པས་ཆོས་ཀུན་འཇིག་པར་འགྱུར།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE55"><h1>55) Meditating on impermanence by reflecting on the unpredictability of the time of death</h1></a><!--Paragraph 55-->
+  <p>With all its many risks, this life endures<br>No more than windblown bubbles in a stream.<br>
+  	How marvellous to breathe in and out again,<br>To fall asleep and then awake refreshed.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE55" role="button" aria-expanded="false" aria-controls="collapseE55">
+    Explanation</a></p>
+<div class="collapse" id="collapseE55">
+  <div class="card card-body">
+	An individual’s life is subject to many kinds of harm, from humans and
+ non humans externally and from illness and other disorders of the elements internally. It is less enduring than a bubble in a stream blown about
+by the wind. What a wonder it is that one can breathe in and then breathe
+out again, fall asleep and wake up again refreshed and still alive. 
+
+	</div></div></td>
+		
+		<td><h1>༥༥༽རང་གི་མི་ཚེ་ལུ་རྟག་པ་བརྟན་པ་མེདཔ།</h1> <!--Paragraph 55--><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr></td></tr>
+	
+	<tr><td><a name="CollapseE56"><h1>56) Meditating on impermanence by reflecting on the inevitability of death</h1></a><!--Paragraph 56-->
+  <p>This body ends as ash, dry dust, or slime,<br>And ultimately shit, no essence left.<br>
+  	Consumed, evaporated, rotted down—<br>Thus know its nature: to disintegrate.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE56" role="button" aria-expanded="false" aria-controls="collapseE56">
+    Explanation</a></p>
+<div class="collapse" id="collapseE56">
+  <div class="card card-body">
+	When its time is over, the body ends up being reduced to ashes by fire,
+being dried up by the sun and wind, or decomposing after being thrown
+into the river; eaten by animals it finally becomes excrement. So know
+that this body has no essence. It will be consumed by fire, it will be
+reduced to nothing by the sun and wind, broken down and rotted away by
+water; chopped into pieces as mouthfuls for animals, its very nature is to
+be divided up.
+
+	</div></div></td>
+		
+		<td><h1>༥༦༽རང་གི་ལུས་འདི་ཡང་སྙིང་པོ་མེདཔ་ཤེས་དགོཔ།</h1> <!--Paragraph 56-->
+  <br><p>ལུས་མཐའ་ཐལ་བ་མཐར་སྐམ་མཐར་འདྲུལ་ཞིང་།།<br>མཐའ་མར་མི་གཙང་སྙིང་པོ་མ་མཆིས་པས།།<br>རྣམ་པར་འཇིག་དེངས་མྱགས་པར་འགྱུར་བ་སྟེ།།<br>སོ་སོར་འགྱེས་ཆོས་ཅན་དུ་མཁྱེན་པར་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE57"><h1>57) Meditating on impermanence by reflecting on other aspects</h1></a><!--Paragraph 57-->
+  <p>The ground, Mount Meru, and the oceans too<br>Will be consumed by seven blazing suns;<br>
+  	Of things with form no ashes will be left,<br>No need to speak of puny, frail man.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE57" role="button" aria-expanded="false" aria-controls="collapseE57">
+    Explanation</a></p>
+<div class="collapse" id="collapseE57">
+  <div class="card card-body">
+	It is said that the mandala of the solid, firm material ground, and Mount
+Meru together with the seven golden mountain ranges, and even the outer
+and inner oceans will be destroyed by a universal fire. When this happens
+the first sun will burn up the trees and forests; the second sun will dry up
+the brooks; the third will dry up Lake Manasarowar and the four great
+rivers; the fourth and fifth will reduce the oceans to dew drops. The sixth
+will dry up everything, leaving not a drop of water. The great earth and
+Mount Meru will all go up in smoke. As the seventh sun rises everything
+will become a single tongue of fire, and not even ashes will be left. So if,
+after the seven suns have appeared, everything is consumed by the blaze
+in a single flame, so that even these physical things—these solid forms—
+are destroyed and nothing, not even ash, is left, what need is there to mention the utterly frail human body? It could not possibly last forever.
+
+	</div></div></td>
+		
+		<td><h1>༥༧༽ཕྱི་སྣོད་ཀྱི་འཇིག་རྟེན་ལུ་བསམ་སྟེ་མི་རྟག་པ་སྒོམ་ཚུལ།</h1> <!--Paragraph 57-->
+  <br><p>ས་དང་ལྷུན་པོ་རྒྱ་མཚོ་ཉི་མ་བདུན།།<br>འབར་བས་བསྲེགས་པས་ལུས་ཅན་འདི་དག་ཀྱང་།།<br>ཐལ་བ་ཙམ་ཡང་ལུས་པར་མི་འགྱུར་ན།།<br>ཤིན་ཏུ་ཉམ་ཆུང་མི་ལྟ་སྨོས་ཅི་འཚལ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE58"><h1>58) A summary of the above</h1></a><!--Paragraph 58-->
+  <p>It’s all impermanent, devoid of self,<br>So if you’re not to stay there refugeless<br>
+  	And helpless, drag your mind away, O King,<br>From plantainlike samsara, which has no core.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE58" role="button" aria-expanded="false" aria-controls="collapseE58">
+    Explanation</a></p>
+<div class="collapse" id="collapseE58">
+  <div class="card card-body">
+	Thus, not only are all things that have form impermanent but so also, as
+explained above, are all these five causal aggregates impermanent, devoid
+of self. There is no refuge to protect you from suffering, no helper to support you, so if you are not to remain in this situation, O Greatest of men
+(meaning “King”), you must, with a sense of disenchantment, drag your
+mind away from this circle of existence, which is without essence, like a
+plantain tree.
+	  
+	</div></div></td>
+		
+		<td><h1>༥༨༽འཁོར་བ་ལུ་ངེས་འབྱུང་སྐྱེ་ཚུལ།</h1> <!--Paragraph 58-->
+  <br><p>དེ་ལྟར་འདི་ཀུན་མི་རྟག་བདག་མེད་དེ།།<br>སྐྱབས་མེད་མགོན་མེད་གནས་མེད་དེ་སླད་དུ།།<br>འཁོར་བ་ཆུ་ཤིང་སྙིང་པོ་མེད་པ་ལ།།<br>མི་མཆོག་ཁྱོད་ཀྱིས་ཐུགས་ནི་འབྱུང་བར་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE59"><h1>59) The rarity of a human birth</h1></a><!--Paragraph 59-->
+  <p>Harder, harder still than that a turtle chance upon<br>The opening in a yoke upon a great and single sea<br>
+  	Is rebirth as a human after rebirth as a beast;<br>So heed the sacred Dharma, King, and make your life bear fruit.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE59" role="button" aria-expanded="false" aria-controls="collapseE59">
+    Explanation</a></p>
+<div class="collapse" id="collapseE59">
+  <div class="card card-body">
+	If the world’s great oceans were to become one, and in that ocean there
+lived a turtle that rose to the surface once in every hundred years; and if,
+on the surface, there were a yoke with a single opening, blown in all directions by the wind, the turtle might just, by coincidence, put its neck
+through the opening in the yoke. But it is even harder for a dumb animal,
+unable to give rise to any powerful positive actions, to migrate from the
+support of an animal body and obtain rebirth in the human state. For this
+reason, Lord of men, now that you have obtained the precious freedoms
+and advantages, make your human body fruitful by making the best use
+of it and practicing the sacred Dharma.
+	  
+	</div></div></td>
+		
+		<td><h1>༥༩༽མིའི་ལུས་རྟེན་འཐོབ་པ་ལཱ་ཁག་ཨིན་མི་ལུ་མནོ་བསམ་གཏང་དགོཔ།</h1> <!--Paragraph 59-->
+  <br><p>རྒྱ་མཚོ་གཅིག་གནས་གཉའ་ཤིང་བུ་ག་དང་།།<br>རུས་སྦལ་ཕྲད་པ་བས་ཀྱང་དུད་འགྲོ་ལས།།<br>མི་ཉིད་ཆེས་ཐོབ་དཀའ་བས་མི་དབང་གིས།།<br>དམ་ཆོས་སྤྱད་པས་དེ་འབྲས་མཆིས་པར་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE60"><h1>60) Showing how despicable it is to practice negative actions with such a body</h1></a><!--Paragraph 60-->
+  <p>More stupid yet than one who throws some slops<br>Into a golden vessel all bejewelled<br>
+  	Is he who’s gained a precious human birth<br>And wastes it in an evil, sinful life.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE60" role="button" aria-expanded="false" aria-controls="collapseE60">
+    Explanation</a></p>
+<div class="collapse" id="collapseE60">
+  <div class="card card-body">
+	Someone who were to sweep sewage—excrement, urine, and the like—
+into a vessel made of gold and ornamented with all kinds of jewels would
+be regarded with universal contempt, but how much more dimwitted it
+is to do negative actions after being born as a human. Not only is the
+human state harder to come by than golden vessels, but negative actions
+are much worse than sewage because they give rise to inexhaustible fully
+ripened effects. For this reason, once you have obtained this support for
+practicing positive actions, this human body, which is so difficult to come
+by, you must be diligent
+	  
+	</div></div></td>
+		
+		<td><h1>༦༠༽མི་ལུས་དོན་ཡོདཔ་འབད་དགོཔ།</h1> <!--Paragraph 60-->
+  <br><p>གང་ཞིག་གསེར་སྣོད་རིན་ཆེན་སྤྲས་པ་ཡིས།།<br>ངན་སྐྱུགས་འཕྱག་པར་བགྱིད་པ་དེ་བས་ཀྱང་།།<br>གང་ཞིག་མི་རུ་སྐྱེས་ནས་སྡིག་པ་དག།<br>བགྱིད་པ་དེ་ནི་ཆེས་རབ་བླུན་པ་ལགས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE61"><h1>61) A general account of the four wheels as favorable conditions</h1></a><!--Paragraph 61-->
+  <p>To dwell in places that befit the task,<br>To follow and rely on holy beings,<br>
+  	Aspiring high, with merit from the past—<br>These four great wheels are yours for you to use.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE61" role="button" aria-expanded="false" aria-controls="collapseE61">
+    Explanation</a></p>
+<div class="collapse" id="collapseE61">
+  <div class="card card-body">
+	Regarding where you should live, stay in a place that is compatible with
+giving rise to the sublime path that increases virtue. As for whom to
+befriend and rely on, follow a supreme being who will make your faults
+diminish and good qualities grow. Wish the best for yourself in accomplishing enlightenment, so that by acting in accordance with your wishes
+you accomplish things properly. From having created merit in previous
+lives your mind will be completely mature.
+These conditions are called “wheels” because they are like the wheels of
+a chariot. Just as a chariot with balanced wheels can swiftly reach its destination, so too with these conditions on the path, one can swiftly reach liberation. You have the four great wheels, and all the various causes for
+accomplishing the path are therefore complete, so be diligent in accomplishing the path.
+	  
+	</div></div></td>
+		
+		<td><h1>༦༡༽མི་ལུས་རིན་པོ་ཆེའི་མཐུན་རྐྱེན་འཁོར་ལོ་བཞིའི་གདམས་ངག།</h1> <!--Paragraph 61-->
+  <br><p>མཐུན་པར་འགྱུར་བའི་ཡུལ་དུ་གནས་པ་དང་།།<br>སྐྱེས་བུ་དམ་པ་ལ་ནི་བསྟེན་པ་དང་།།<br>བདག་ཉིད་ལེགས་སྨོན་སྔོན་ཡང་བསོད་ནམས་བགྱིས།།<br>འཁོར་ལོ་ཆེན་པོ་བཞི་ནི་ཁྱོད་ལ་མངའ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE62"><h1>62) A specific explanation of the spiritual friend</h1></a><!--Paragraph 62-->
+  <p>The virtuous friend in whom to place your trust<br>Has brought pure conduct to perfection, said the Lord.<br>
+  	So follow holy beings, many are they<br>Who relied upon the Buddhas and found peace.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE62" role="button" aria-expanded="false" aria-controls="collapseE62">
+    Explanation</a></p>
+<div class="collapse" id="collapseE62">
+  <div class="card card-body">
+	Someone who is accomplishing the path has first to rely on a spiritual
+friend. The latter has perfected pure conduct and is the cause that takes
+one beyond suffering, as the Capable One declared: “Ananda, thus it is:
+spiritual friends and virtuous companions are those who have brought
+pure conduct to perfection. As a result of this, Ananda, all those whose
+nature is to be born will be liberated from birth by relying on a spiritual
+friend ....” For this reason, constantly follow holy beings. By relying on the
+Victorious Ones a very great many sentient beings have attained peace.
+What then are the characteristics of a holy being? In other words, he observes the three precious trainings, he is richly
+endowed with the transmissions of the Three Pitakas, he has realized the
+absolute nature as it is, he is skilled in teaching others and explaining the
+words, he is loving towards disciples and others, and he never tires of
+teaching by giving instructions and advice.  
+	</div></div></td>
+		
+		<td><h1>༦༢༽བླ་མ་བསྟེན་ཐངས།</h1> <!--Paragraph 62-->
+  <br><p>དགེ་བའི་བཤེས་གཉེན་བསྟེན་པ་ཚངས་པར་སྤྱོད།།<br>ཡོངས་སུ་རྫོགས་པར་ཐུབ་པས་གསུངས་དེའི་ཕྱིར།།<br>སྐྱེས་བུ་དམ་པ་བསྟེན་བགྱི་རྒྱལ་བ་ལ།།<br>བརྟེན་ནས་རབ་ཏུ་མང་པོས་ཞི་བ་ཐོབ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE63"><h1>63) Reflecting on how to be free of the eight unfavorable conditions of lack of opportunity</h1></a><!--Paragraph 63-->
+  <p>To be reborn with false beliefs, or yet<br>As animals, or pretas, or in hell,<br>
+  	Deprived of Buddha’s words, barbarians<br>In border lands, or reborn dull and dumb,</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE63" role="button" aria-expanded="false" aria-controls="collapseE63">
+    Explanation</a></p>
+<div class="collapse" id="collapseE63">
+  <div class="card card-body">
+	The following kinds of rebirth are known as the eight defective states of
+lack of opportunity. To be born holding wrong views and scorning the
+law of cause and effect. To be born as an animal, as a preta, or in the hells
+(thus making three unfavorable states in the lower realms). To be born
+bereft of the Conqueror’s teachings, that is, born in a world where no
+Buddhas have appeared, or even if they have appeared, to be born as a barbarian in a border country where one does not even hear the word “Buddha”; or even if born in a central land, to be born dull and dumb, in the
+sense of being mentally defective and unable to speak (making four in the
+human realm). 
+	</div></div></td>
+		
+		<td><h1>༦༣༽མི་ཁོམ་པའི་གནས་བརྒྱད།</h1> <!--Paragraph 63-->
+  <br><p>ལོག་པར་ལྟ་བ་འཛིན་དང་དུད་འགྲོ་དང་།།<br>ཡི་དྭགས་ཉིད་དུ་དམྱལ་བར་སྐྱེ་བ་དང་།།<br>རྒྱལ་བའི་བཀའ་མེད་པ་དང་མཐའ་འཁོབ་ཏུ།།<br>ཀླ་ཀློར་སྐྱེ་དང་གླེན་ཞིང་ལྐུགས་པ་ཉིད།།<br>
+			ཚེ་རིང་ལྷ་ཉིད་གང་ཡང་རུང་བར་ནི།།<br>སྐྱེ་བ་ཞེས་བགྱི་མི་ཁོམ་སྐྱོན་བརྒྱད་པོ།།<br>དེ་དག་དང་བྲལ་ཁོམ་པ་རྙེད་ནས་ནི།།<br>སྐྱེ་བ་ལྡོག་པའི་སླད་དུ་འབད་པར་མཛོད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE64"><h1>64) Reflecting on how to be free of the eight unfavorable conditions of lack of opportunity</h1></a><!--Paragraph 64-->
+  <p>Or born among the long- lived gods—<br>Of these eight defective states that give no opportunity<br>
+  	You must be free, and, finding opportunity,<br>Be diligent, to put a stop to birth.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE64" role="button" aria-expanded="false" aria-controls="collapseE64">
+    Explanation</a></p>
+<div class="collapse" id="collapseE64">
+  <div class="card card-body">
+	Or to be born as a long- lived god lacking the perception
+of being sentient (making one in the gods’ realm).61 Once one has found
+the extraordinary human body that is free of these eight defects and provides the opportunity to accomplish the path of liberation, one must make
+it meaningful; so, advises Nagarjuna, work hard to accomplish the path
+properly in order to stop rebirth in samsara.
+	</div></div></td>
+		
+		<td><h1>༦༤༽སྤྱིར་འཁོར་བ་ལུ་སྐྱེ་བའི་ཉེས་དམིགས་བསྒོམ་དགོཔ།</h1> <!--Paragraph 64--><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr></td></tr>
+	
+	<tr><td><a name="CollapseE65"><h1>65) Brief introduction</h1></a><!--Paragraph 65-->
+  <p>O Gentle Sir, to make your disenchantment grow<br>With this samsara, source of many pains—<br>
+  	Desires frustrated, death, ill health, old age—<br>Please heed its defects, even just a few.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE65" role="button" aria-expanded="false" aria-controls="collapseE65">
+    Explanation</a></p>
+<div class="collapse" id="collapseE65">
+  <div class="card card-body">
+	Gentle Sir, says Nagarjuna, addressing the king, since samsara is the
+source of many kinds of suffering—frustrated desires for food, clothes,
+and so forth, and finally death, with, in the meantime, illness as the elements change, ageing as one’s youth transforms, and misery, lamentation,
+and so on—it is samsara that you must weary of. If you do not drag your
+mind away from samsara, you will never think of striving for liberation.
+And since just talking about a few of its—samsara’s—defects helps to do
+that, I will mention them briefly in order to inspire weariness in you, so
+please listen.
+	</div></div></td>
+		
+		<td><h1>༦༥༽སྐྱེ་བ་ལུ་ངེས་པ་མེདཔ།</h1> <!--Paragraph 65-->
+  <br><p>ཕ་ནི་བུ་ཉིད་མ་ནི་ཆུང་མ་ཉིད།།<br>སྐྱེ་བོ་དགྲ་གྱུར་པ་དག་བཤེས་ཉིད་དང་།།<br>བཟློག་པ་ཉིད་དུ་མཆིས་པས་དེ་སླད་དུ།།<br>འཁོར་བ་དག་ན་ངེས་པ་འགའ་མ་མཆིས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE66"><h1>66) How, since one cannot be certain who is a friend and who an enemy, it is inappropriate to rely on anyone</h1></a><!--Paragraph 66-->
+  <p>Men who’ve fathered sons in turn are sons,<br>And mothers likewise daughters. Bitter foes<br>
+  	Turn into friends, the converse too is true.<br>Because of this samsara’s never sure.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE66" role="button" aria-expanded="false" aria-controls="collapseE66">
+    Explanation</a></p>
+<div class="collapse" id="collapseE66">
+  <div class="card card-body">
+	In taking birth again and again, fathers sometimes become sons, mothers
+become daughters, and even people who have been enemies become close
+friends in other lives. And vice versa: sons become fathers and so on.
+Because of this there is no certainty at all that in samsara one ends up as
+one thing, either friend or enemy. So get rid of attachment and aversion,
+taking sides with friends and against enemies.
+	</div></div></td>
+		
+		<td><h1>༦༦༽ཤི་བ་གྲངས་ཀྱིས་མ་ཆོད་པའི་ཉེས་པ།</h1> <!--Paragraph 66-->
+  <br><p>རེ་རེའི་བདག་ཉིད་རུས་པའི་ཕུང་པོ་ནི།།<br>ལྷུན་པོ་མཉམ་པ་བསྙེད་ཅིག་འདས་གྱུར་ཏེ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE67"><h1>67) How one can never be satisfied</h1></a><!--Paragraph 67-->
+  <p>Know that every being has drunk more milk<br>Than all the four great oceans could contain,<br>
+  	And still, by emulating common folk,<br>They’ll circle, drinking ever more and more.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE67" role="button" aria-expanded="false" aria-controls="collapseE67">
+    Explanation</a></p>
+<div class="collapse" id="collapseE67">
+  <div class="card card-body">
+	Know that every sentient being has drunk more milk in the past than
+could be contained in the four great oceans in the four directions, there
+being no number to their births on the earth. And even now, as samsaric
+beings who have not set out on the sublime path and are following the
+path of ordinary, samsaric individuals, they will drink milk in even greater
+quantities than before, because for childish beings who have not cultivated
+positive actions consistent with liberation there is no end to their circling
+in samsara.
+	</div></div></td>
+		
+		<td><h1>༦༧༽སྐྱེ་བ་གྲངས་ཀྱིས་མ་ཆོདཔ་ལེན་ཡོད་པའི་རྒྱུ་མཚན།</h1> <!--Paragraph 67-->
+  <br><p>མ་ཡི་ཐུག་མཐའ་རྒྱ་ཤུག་ཚིག་གུ་ཙམ།།<br>རིལ་བུར་བགྲངས་ཀྱང་ས་ཡིས་ལང་མི་འགྱུར།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE68"><h1>68) How it is impossible to predict when it will all end</h1></a><!--Paragraph 68-->
+  <p>A heap of all the bones each being has left<br>Would reach to Meru’s top or even higher.<br>
+  	To count one’s mother’s lineage with pills<br>The size of berries, the earth would not suffice.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE68" role="button" aria-expanded="false" aria-controls="collapseE68">
+    Explanation</a></p>
+<div class="collapse" id="collapseE68">
+  <div class="card card-body">
+	The pile of the bones each being has had in previous lives is as big as
+Mount Meru or even surpasses it in height, and still more bones, many
+more than that, will have to be left behind if one does not make efforts on
+the path.
+Even if one tried to count all one’s maternal ancestors by fashioning
+pills the size of juniper berries from the earth of this planet and counting
+them, one would run out of earth without ever reaching the end. A single
+being could never finish counting the number of mothers he has had, so
+how many myriads more will there be to come if one does not endeavor
+properly on the path?
+	</div></div></td>
+		
+		<td><h1>༦༨༽མཐོན་པོའི་གོ་ས་ལུ་སྙིང་པོ་མེད་ཚུལ།</h1> <!--Paragraph 68-->
+  <br><p>བརྒྱ་བྱིན་འཇིག་རྟེན་མཆོད་འོས་གྱུར་ནས་ནི།།<br>ལས་ཀྱི་དབང་གིས་ཕྱིར་ཡང་ས་སྟེང་ལྷུང་།།<br>འཁོར་ལོ་བསྒྱུར་རྒྱལ་ཉིད་དུ་གྱུར་ནས་ཀྱང་།།<br>འཁོར་བ་དག་ཏུ་ཡང་བྲན་ཉིད་དུ་འགྱུར།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE69"><h1>69) How great dominion cannot be relied on</h1></a><!--Paragraph 69-->
+  <p>Indra, universally revered,<br>Will fall again to earth through action’s force.<br>
+  	And he who ruled the universe as king<br>Will be a slave within samsara’s wheel.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE69" role="button" aria-expanded="false" aria-controls="collapseE69">
+    Explanation</a></p>
+<div class="collapse" id="collapseE69">
+  <div class="card card-body">
+	Having become Indra, worthy of the offerings of the world, for he is venerated by worldly gods not to mention everyone else, one will, because of
+the residual effect of one’s actions, again fall back onto the earth among
+ordinary men or into the lower realms.
+Even if one has become a universal monarch, possessing the seven precious attributes of royalty and having dominion over the four continents,
+when there is nothing left of one’s past good deeds one will, on account of
+one’s actions in samsara, again be reborn into slavery among men or fall
+into the lower realms.
+	</div></div></td>
+		
+		<td><h1>༦༩༽འདོད་པའི་བདེ་བ་ལུ་བློ་གཏད་མ་བཏུབ།</h1> <!--Paragraph 69-->
+  <br><p>མཐོ་རིས་བུ་མོའི་ནུ་མ་རྐེད་པ་ལ།།<br>རེག་པའི་བདེ་བ་ཡུན་རིང་མྱངས་ནས་སླར།།<br>དམྱལ་བར་འཐག་གཅོད་དབད་བའི་འཕྲུལ་འཁོར་གྱིས།།<br>རེག་པ་ཤིན་ཏུ་མི་བཟད་བསྟེན་འཚལ་ལོ།།</p> <audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE70"><h1>70) How delightful company cannot be relied on</h1></a><!--Paragraph 70-->
+  <p>For ages it was rapture to caress<br>The lovely breasts and waists of heaven’s maids,<br>
+  	Now one will bear the terrible caress—<br>The crush, the slash, and tear—of hell’s machine.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE70" role="button" aria-expanded="false" aria-controls="collapseE70">
+    Explanation</a></p>
+<div class="collapse" id="collapseE70">
+  <div class="card card-body">
+	After being born as a god and spending ages enjoying the pleasures of
+caressing the breasts and waists of maidens in the higher realms, one has
+no good deeds left and as a result of one’s negative actions one is again
+reborn in the hells. There, in the Crushing Hell, one is crushed between
+massive mountains of iron; in the Black Line Hell one is carved up with
+swords and other weapons; and in the Hells of Heat and Intense Heat one
+is pierced and cut with blazing pikes and with saws and so forth, and
+pecked and clawed by savage beasts. Know that for a very long time one
+will endure the agonizing pain that comes from contact with the machinery of hell.
+	</div></div></td>
+		
+		<td><h1>༧༠༽གནས་ལས་འབྱུང་བའི་བདེ་བ་ལུ་བློ་གཏད་མ་བཏུབ།</h1> <!--Paragraph 70-->
+  <br><p>རྐང་པའི་རེག་པས་ནེམས་པར་བདེ་བཟོད་པ།།<br>ལྷུན་པོའི་སྤོ་ལ་ཡུན་རིང་གནས་ནས་ནི།།<br>སླར་ཡང་མེ་མུར་རོ་མྱགས་རྒྱུ་བ་ཡི།།<br>སྡུག་བསྔལ་མི་བཟོད་འཕོག་སྙམ་བགྱིད་འཚལ་ལོ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE71"><h1>71) How there is no essence to pleasant places</h1></h></a><!--Paragraph 71-->
+  <p>For years you might have stayed on Meru’s crest<br>Delighting as it yielded underfoot,<br>
+  	But think now of the torment that will strike:<br>To wade through glowing coals and rotten flesh.</p>
+
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE71" role="button" aria-expanded="false" aria-controls="collapseE71">
+    Explanation</a></p>
+<div class="collapse" id="collapseE71">
+  <div class="card card-body">
+	After staying for a long time—thousands of god- years—on the summit of
+Mount Meru, which is made from the four kinds of precious substances
+and where the ground procures the delightful sensation62 of giving slightly
+when trodden underfoot and leaving an imprint when one lifts one’s foot,
+because of one’s deeds one is again stricken by the terrible suffering of
+wandering in agony in hell, knee deep in burning embers, and through
+swamps of rotting corpses and excrement. I beg you to bear this in mind
+and think, “I will have to experience that.”
+	</div></div></td>
+		
+		<td><h1>༧༡༽སྐྱེད་ཚལ་མཛེས་པའི་དགའ་སྤྲོ་ཡང་་སེམས་སྐྱོ་བའི་གཞི་ཨིནམ།</h1> <!--Paragraph 71-->
+  <br><p>མཐོ་རིས་བུ་མོས་འབྲོངས་ཤིང་དགའ་བ་དང་།།<br>རྣམ་པར་མཛེས་ཚལ་སོན་པར་རྩེས་ནས་སླར།།<br>འདབ་མ་རལ་གྲི་འདྲ་ཚལ་ནགས་རྣམས་ཀྱིས།།<br>རྐང་ལག་རྣ་བ་སྣ་གཅོད་འཐོབ་པར་འགྱུར།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE72"><h1>72) How there is no essence to happy activities</h1><!--Paragraph 72-->
+  <p>Those who in the Joyous Garden played<br>and in Beauty's Grove were served by heaven's maids,<br>
+  	Will come to woods of trees with swordlike leaves<br>And cut their hands and feet, their ears and nose.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE72" role="button" aria-expanded="false" aria-controls="collapseE72">
+    Explanation</a></p>
+<div class="collapse" id="collapseE72">
+  <div class="card card-body">
+	Having delighted at length in the pleasures of the desire realm, arriving in
+the Garden of Joy and the Grove of Utter Beauty surrounded by many
+attentive daughters of the gods in the higher realms, again, in hell, one will
+arrive in the forest of swordlike leaves, with pointed stakes and a variety
+of sharp weapons for leaves, stirred by the wind. As, driven by karma, one
+climbs up and falls down, one will cut one’s hands and feet, ears and nose,
+and undergo all sorts of sufferings having one’s whole body and limbs
+slashed and pierced.
+	</div></div></td>
+		
+		<td><h1>༧༢༽མཐུན་རྐྱེན་ཡིད་དུ་འོང་བ་ལུ་བློ་གཏད་མ་བཏུབ།</h1> <!--Paragraph 72-->
+  <br><p>དལ་གྱིས་འབབ་པར་ལྷའི་བུ་མོ་ནི།།<br>གདོང་མཛེས་གསེར་གྱི་པདྨ་ལྷན་བཞུགས་ནས།།<br>སླར་ཡང་དམྱལ་བའི་ཆུ་བོ་རབས་མེད་པ།།<br>ཚ་སྒོ་བཟོད་བླགས་ཆུ་ཚན་འཇུག་འཚལ་ལོ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE73"><h1>73) How there is no essence to happy activities</h1><!--Paragraph 73-->
+  <p>Among the golden lotuses and lovely maids<br>They bathed in heaven's Gently Flowing Pool,<br>
+  	But in hell's own water will they purge,<br>The scalding, caustic River None Can Ford.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE73" role="button" aria-expanded="false" aria-controls="collapseE73">
+    Explanation</a></p>
+<div class="collapse" id="collapseE73">
+  <div class="card card-body">
+	Having delighted at length in the pleasures of the desire realm, arriving in
+the Garden of Joy and the Grove of Utter Beauty surrounded by many
+attentive daughters of the gods in the higher realms, again, in hell, one will
+arrive in the forest of swordlike leaves, with pointed stakes and a variety
+of sharp weapons for leaves, stirred by the wind. As, driven by karma, one
+climbs up and falls down, one will cut one’s hands and feet, ears and nose,
+and undergo all sorts of sufferings having one’s whole body and limbs
+slashed and pierced.
+	</div></div></td>
+		
+		<td><h1>༧༣༽ལྷ་ཡུལ་ཁམས་གོང་མའི་བདེ་བ་ལུ་བློ་གཏད་མ་བཏུབ།</h1> <!--Paragraph 73-->
+  <br><p>ལྷ་ཡུལ་འདོད་བདེ་ཤིན་ཏུ་ཆེན་པོ་དང་།།<br>ཚང་སཉིད་ཆགས་བྲལ་བདེ་བ་ཐོབ་ནས་སླར།།<br>མནར་མེད་མེ་ཡི་བུད་ཤིང་གྱུར་པ་ཡི།།<br>སྡུག་བསྔལ་རྒྱུན་མི་ཆད་པར་བསྟེན་འཚལ་ལོ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE74"><h1>74) How there is no essence to great wealth</h1><!--Paragraph 74-->
+  <p>A Kamaloka god, one gains such bliss,<br>As Brahma, bliss that’s free from all desire;<br>
+  	But know that after that comes constant pain:<br>As firewood one feeds Avici’s flames.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE74" role="button" aria-expanded="false" aria-controls="collapseE74">
+    Explanation</a></p>
+<div class="collapse" id="collapseE74">
+  <div class="card card-body">
+	One might have obtained the immense happiness of the world of desire,
+living in the gods’ realms above the Heaven Free of Conflict—a sublime
+happiness much greater than that in the gods’ realms below; or obtained
+the bliss free from the attachment of the world of desire in Brahma’s
+world, the world of form. But know that afterwards, because of one’s “negative deeds due to be experienced in other lives,”64 one will have to endure
+the ceaseless suffering of being horribly burnt as if one were fuel for the
+fires of the Hell of Torment Unsurpassed.
+	</div></div></td>
+		
+		<td><h1>༧༤༽སྟོབས་དང་གཟི་བརྗིད་ལུ་ངེས་པ་མེདཔ།</h1> <!--Paragraph 74-->
+  <br><p>ཉི་མ་ཟླ་བ་ཉིད་ཐོབ་རང་ལུས་ཀྱི།།<br>འོད་ཀྱིས་འཇིག་རྟེན་མཐའ་དག་སྣང་བྱས་ཏེ།།<br>སླར་ཡང་མུན་ནག་སྨག་ཏུ་ཕྱིན་གྱུར་ནས།།<br>རང་གི་ལག་པ་བརྐྱངས་པའང་མི་མཐོང་འགྱུར།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE75"><h1>75) How great splendor cannot be relied on</h1><!--Paragraph 75-->
+  <p>One who was reborn as sun or moon,<br>Whose body’s light lit whole worlds far below,<br>
+  	Will then arrive in states of darkest gloom,<br>His outstretched hands will be invisible.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE75" role="button" aria-expanded="false" aria-controls="collapseE75">
+    Explanation</a></p>
+<div class="collapse" id="collapseE71">
+  <div class="card card-body">
+	One might have obtained rebirth as a child of the gods, as the sun or the
+moon itself, which the Tirthikas believe to be gods; with the light of one’s
+own body (or, as commonly recounted on earth, with the celestial measureless palace) one illuminated the whole world below. But even having
+been so bright and luminous, again one will reach, or take birth in, the
+pitch darkness between worlds, where there is no light from the sun or
+moon, and one will experience the misery of being in a place where one
+cannot even see one’s own hands stretched out in front.
+	</div></div></td>
+		
+		<td><h1>༧༥༽སྡུག་བསྔལ་གྱི་མུན་པ་ཉི་ཟླས་སེལ་ཐབས་མེདཔ།</h1> <!--Paragraph 75-->
+  <br><p>དེ་ལྟར་ནོངས་པར་འགྱུར་འཚལ་བསོད་ནམས་ནི།།<br>རྣམ་གསུམ་མར་མེའི་སྣང་བ་རབ་བཞེས་ཤིག།<br>གཅིག་པུ་ཉི་མ་ཟླ་བས་མི་བརྫི་བའི།།<br>མུན་ནག་མཐའ་ཡས་ནང་དུ་འཇུག་འཚལ་ལོ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE76"><h1>76) Advice on recognizing all this and practicing virtue</h1><!--Paragraph 76-->
+  <p>So thus it is you’ll ail, and knowing this<br>Please seize the lamp of merit’s triple form,<br>
+  	For otherwise you’ll plunge and go alone<br>In deepest dark unlit by sun or moon.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE76" role="button" aria-expanded="false" aria-controls="collapseE76">
+    Explanation</a></p>
+<div class="collapse" id="collapseE76">
+  <div class="card card-body">
+	Knowing that you will ail thus (meaning “die”), experiencing in a variety
+of ways such things as the impermanence of life and falling into lower
+states after staying in the higher realms, firmly seize the light of the lamp
+that dispels the darkness of the lower realms, the three kinds of merit—
+those that come from generosity, discipline, and meditation or those
+related to the body, speech, and mind. Know that without merit to light the
+way, you will plunge alone, with no one to accompany you, into the darkness of the three lower realms on which the light of the sun and moon
+makes no impression—they are powerless to overcome it.
+	</div></div></td>
+		
+		<td><h1>༧༦༽དམྱལ་བའི་སྡུག་བསྔལ་སྤྱིར་བཤད་པ།</h1> <!--Paragraph 76-->
+  <br><p>སེམས་ཅན་ཉེས་པ་སྤྱད་པ་སྤྱོད་རྣམས་ལ།།<br>ཡང་སོས་ཐིག་ནག་རབ་ཏུ་ཚ་བ་དང་།།<br>བསྡུས་འཇོམས་ངུ་འབོད་མནར་མེད་ལ་སོཊ་པའི།།<br>དམྱལ་བ་རྣམས་སུ་རྟག་ཏུ་སྡུག་བསྔལ་འགྱུར།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE77"><h1>77) The sufferings in the hells</h1><!--Paragraph 77-->
+  <p>For beings who indulge in evil deeds<br>There’s constant pain in these and other hells:<br>
+  	Reviving Hell, Black Line, and Intense Heat,<br>And Crushing, Screaming, Torment Unsurpassed.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE77" role="button" aria-expanded="false" aria-controls="collapseE77">
+    Explanation</a></p>
+<div class="collapse" id="collapseE77">
+  <div class="card card-body">
+	Sentient beings who perform negative actions with their body, speech,
+and mind will experience the sufferings of the hells. What are these sufferings? They are the constant torments that will be experienced in the
+Reviving Hell, Black Line Hell, Hell of Heat, Hell of Intense Heat, crushing Hell, Screaming Hell, Great Screaming Hell, and the Hell of Torment
+Unsurpassed, and others, that is, the neighboring hells, the ephemeral
+hells, and the eight cold hells.
+	</div></div></td>
+		
+		<td><h1>༧༧༽དམྱལ་བ་བསྡུས་འཇོམས་ཀྱི་སྡུག་བསྔལ།</h1> <!--Paragraph 77-->
+  <br><p>ཁ་ཅིག་ཏིལ་བཞིན་འཚིར་ཏེ་དེ་བཞིན་གཞན།།<br>ཕྱེ་མ་ཞིབ་མོ་བཞིན་དུ་ཕྱེ་མར་རློག།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE78"><h1>78) The sufferings one needs to know</h1><!--Paragraph 78-->
+  <p>Some are squeezed and pressed like sesame,<br>Others likewise ground like finest flour,<br>
+  	Some are cut and carved as if with saws,<br>Others hacked with axes, razor- honed.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE78" role="button" aria-expanded="false" aria-controls="collapseE78">
+    Explanation</a></p>
+<div class="collapse" id="collapseE78">
+  <div class="card card-body">
+	First, the Crushing Hell, a hot hell. Some beings are squeezed as if in an
+iron press used for extracting sesame oil, causing putrid blood to flow out.
+Similarly, other beings in this hell are ground by blazing iron mills and
+mortars and reduced to fine flour, like that of rice or other grains. Some
+beings, in the Black Line Hell, are carved up as if by blazing saws, others,
+likewise, chopped up with fiery axes with excruciatingly sharp blades.
+	</div></div></td>
+		
+		<td><h1>༧༨༽ཐིག་ནག་གི་སྡུག་བསྔལ།</h1> <!--Paragraph 78-->
+  <br><p>ཁ་ཅིག་སོག་ལེས་འདྲས་ཏེ་དེ་བཞིན་གཞན།།<br>སྟྭ་རེ་མི་བཟོད་སོ་རྣོན་རྣམས་ཀྱིས་གཤོག།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE79"><h1>79)The actual sufferings</h1></a><!--Paragraph 79-->
+  <p>Others still are forced to swallow draughts<br>Of burning molten bronze that flares and sparks,<br>
+  	Some impaled and threaded onto skewers—<br>Barbed and fiercely blazing stakes of steel.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE79" role="button" aria-expanded="false" aria-controls="collapseE79">
+    Explanation</a></p>
+<div class="collapse" id="collapseE79">
+  <div class="card card-body">
+	  Similarly, others in the Hell of Heat or on the banks of the Unfordable
+River, their mouths forced open with iron tongs, are given liquid of burning molten bronze wreathed with fiery sparks to drink. In the Hell of
+Heat, some are skewered on barbed, fiercely blazing stakes of steel.
+	
+	</div></div></td>
+		
+		<td><h1>༧༩༽ཆུ་བོ་རབས་མེད་ཀྱི་སྡུག་བསྔལ།</h1> <!--Paragraph 79-->
+  <br><p>དེ་བཞིན་གཞན་དག་ཁྲོ་ཆུ་བཞུས་པ་ཡིས།།<br>ཁུ་བ་འབར་བ་འཁྲིགས་པ་ལྡུད་པར་བགྱིད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE80"><h1>80) The actual sufferings</h1></a><!--Paragraph 80-->
+  <p>Some, whom savage dogs with iron fangs<br>Will rip to shreds, in dread throw up their hands,<br>
+  	And others, powerless, are pecked by crows<br>With sharpened beaks of steel and razor claws.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE80" role="button" aria-expanded="false" aria-controls="collapseE80">
+    Explanation</a></p>
+<div class="collapse" id="collapseE80">
+  <div class="card card-body">
+	  In the Forest of Swordlike Leaves, some have their bodies torn to pieces
+and devoured by fierce steel- fanged hounds barking loudly, and throw
+their hands up in the air, crying out for help. Other helpless beings at the
+top of the hill of shalmali trees have their eyes pecked out and flesh torn
+away by flocks of crows and other birds with sharp steel beaks and mercilessly sharp iron claws.
+	
+	</div></div></td>
+		
+		<td><h1>༨༠༽ཚ་བའི་སྡུག་བསྔལ།</h1> <!--Paragraph 80-->
+  <br><p>ཁ་ཅིག་ལྕགས་ཀྱི་གསལ་ཤིང་རབ་འབར་བ།།<br>ཚེར་མ་ཅན་ལ་ཀུན་ཏུ་བརྒྱུད་པར་བགྱིད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE81"><h1>81) The actual sufferings</h1></a><!--Paragraph 81-->
+  <p>Some there are who roll about and wail,<br>Devoured by worms and multicolored grubs,<br>
+	  Ten thousand buzzing flies and bees that leave<br>Great stings and bites unbearable to touch.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE81" role="button" aria-expanded="false" aria-controls="collapseE81">
+    Explanation</a></p>
+<div class="collapse" id="collapseE81">
+  <div class="card card-body">
+	  Some are eaten by the worms in their own bodies, by insects of various
+species, colors and shapes, and by many tens of thousands of bluebottles
+and black bees inflicting great bites, which are exquisitely painful to touch.
+Because of this, they roll their bodies on the ground, their voices wailing
+in distress. This is a suffering in the neighboring hells.
+	
+	</div></div></td>
+		
+		<td><h1>༨༡༽རལ་གྲི་ལོ་མའི་ནགས་ཚལ་གྱི་སྡུག་བསྔལ།</h1> <!--Paragraph 81-->
+  <br><p>ཁ་ཅིག་ལྕགས་ཀྱི་མཆེ་བ་ལྡན་པའི་ཁྱི།།<br>གཏུམ་པོས་དབད་ཅིང་ལག་པའང་གནམ་དུ་བསྒྲེངས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE82"><h1>82) The actual sufferings</h1></a><!--Paragraph 82-->
+  <p>Some, in heaps of blazing red hot coals,<br>Are burned without a break, their mouths agape.<br>
+  	And some are boiled in cauldrons made of iron,<br>Cooked like dumplings, heads turned upside down.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE82" role="button" aria-expanded="false" aria-controls="collapseE82">
+    Explanation</a></p>
+<div class="collapse" id="collapseE82">
+  <div class="card card-body">
+	Some beings in the Hell of Heat are burned uninterruptedly in piles of
+glowing iron embers by the guardians of hell and have no strength but to
+lie with their mouths stretched open. And some in that hell are cooked
+upside down in huge cauldrons made of iron, filled with brine and blazing with fire—cooked like rice dumplings, which, when thrown into a pot
+of boiling water, are alternately sucked down and thrown up to the surface
+again.
+	</div></div></td>
+		
+		<td><h1>༨༢༽ཤལ་མ་རིའི་སྡོང་པོའི་སྡུག་བསྔལ།</h1> <!--Paragraph 82-->
+  <br><p>དབང་མེད་གཞན་དག་ལྕགས་མཆུ་རྣོན་པོ་དང་།།<br>སེན་མོ་མི་བཟད་ལྡན་པའི་ཁྭ་རྣམས་འཐོག།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE83"><h1>83) Reflecting on when these sufferings befall one</h1></a><!--Paragraph 83-->
+  <p>The very instant that they cease to breathe<br>The wicked taste the boundless pains of hell.<br>
+  	And he who hearing this is not afraid<br>A thousandfold is truly diamond hard.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE83" role="button" aria-expanded="false" aria-controls="collapseE83">
+    Explanation</a></p>
+<div class="collapse" id="collapseE83">
+  <div class="card card-body">
+	Evil beings who have committed acts whose result will definitely be experienced as the suffering of the hells go to hell in just the time it takes to
+breathe in and out, because there is only the merest interval in which they
+proceed to hell: they are reborn there the moment breathing stops. Anyone whose mind is not terrified a thousand times over, and whose body
+does not crack into a thousand pieces on hearing of their immeasurable or
+infinite suffering in hell, definitely has a body and mind as hard as a diamond, because otherwise he would be much more afraid.
+	</div></div></td>
+		
+		<td><h1>༨༣༽རོ་མྱགས་ཀྱི་འདམ་གྱི་སྡུག་བསྔལ།</h1> <!--Paragraph 83-->
+  <br><p>ཁ་ཅིག་སྲིན་འབུ་སྦུར་བ་སྣ་ཚོགས་དང་།།<br>ཤ་སྦྲང་སྦྲང་མ་ནག་པོ་ཁྲི་ཕྲག་དང་།།<br>རེག་ན་མི་བཟོད་རྨ་ སྲོལ་ཆེར་འབྱིན་པས།།<br>ཟ་བར་བགྱིད་ཅིང་འགྲེ་ལྡོག་སྨྲེ་ངག་འདོན།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE84"><h1>84) Reflecting on how unbearable these sufferings are when they occur</h1></a><!--Paragraph 84-->
+  <p>If simply seeing pictures of the hells<br>And hearing, thinking, reading of them scares,<br>
+  	Or making sculpted figures, need we say<br>How hard to bear the ripened fruit will be?</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE84" role="button" aria-expanded="false" aria-controls="collapseE84">
+    Explanation</a></p>
+<div class="collapse" id="collapseE84">
+  <div class="card card-body">
+	If even seeing drawings of the hells, or hearing about them from others
+and in that way thinking about them, or reading books containing passages from the sutras and so on, or representing them with materials such
+as clay will make one afraid, one need hardly mention the actual experience, the utterly terrible fully ripened effect.
+	</div></div></td>
+		
+		<td><h1>༨༤༽རབ་ཏུ་ཚ་བའི་སྡུག་བསྔལ།</h1> <!--Paragraph 84-->
+  <br><p>ཁ་ཅིག་མདག་མེ་འབར་བའི་ཚོགས་སུ་ནི།།<br>རྒྱུན་མི་ཆད་པར་རབ་བསྲེགས་ཁ་ཡང་བགྲད།།<br>ཁ་ཅིག་ལྕགས་ལས་བྱས་པའི་ཟངས་ཆེན་དུ།།<br>སྤྱིའུ་ཚུགས་འབྲས་ཀྱི་ཅུང་འཕེན་བཞིན་དུ་འཚེད།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE85"><h1>85) Showing in particular how the suffering in the Hell of Torment Unsurpassed is greater than all sufferings</h1></a><!--Paragraph 85-->
+  <p>Of all the forms of happiness there are,<br>The lord is bliss where craving’s fully spent.<br>
+  	So too, of all the misery there is,<br>The pain in Torment Unsurpassed is worst.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE85" role="button" aria-expanded="false" aria-controls="collapseE85">
+    Explanation</a></p>
+<div class="collapse" id="collapseE85">
+  <div class="card card-body">
+	Just as of all kinds of happiness it is complete liberation, or the lord of
+bliss, the complete exhaustion of the craving of the three worlds, that is
+considered supreme, of all sufferings the suffering in the Hell of Torment
+Unsurpassed is by far the greatest and the most terrible.
+	</div></div></td>
+		
+		<td><h1>༨༥༽ནམ་འབྱུང་གི་དུས་ལུ་བསམ་སྟེ་སྡིག་པ་སྤང་ཚུལ།</h1> <!--Paragraph 85-->
+  <br><p>སྡིག་ཅན་དབུགས་འབྱུང་འགགས་པ་ཙམ་ཞིག་གི།<br>དུས་ཀྱི་བར་དུ་ཆོད་རྣམས་དམྱལ་བ་ཡི།།<br>སྡུག་བསྔལ་གཞལ་ཡས་ཐོས་ནས་རྣམ་སྟོང་དུ།།<br>མི་འཇིགས་གང་ལགས་རྡོ་རྗེའི་རང་བཞིན་ནོ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE86"><h1>86) An example showing how the torment of hell is much greater even than the especially great pain of being struck by common weapons</h1></a><!--Paragraph 86-->
+  <p>For one whole day on earth three hundred darts<br>Might strike you hard and cause you grievous pain,<br>
+  	But that could never illustrate or match<br>A fraction of the smallest pain in hell.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE86" role="button" aria-expanded="false" aria-controls="collapseE86">
+    Explanation</a></p>
+<div class="collapse" id="collapseE86">
+  <div class="card card-body">
+	The pain for a whole day, here among humans, of being struck with very
+great force by three hundred short spears at once does not even begin to
+hint at the sufferings of just the ephemeral hells, the smallest of hell’s
+sufferings: an example such as this does not compare with so much as a
+fraction, a hundred- thousandth of those torments.
+	</div></div></td>
+		
+		<td><h1>༨༦༽སྡུག་བསྔལ་བཟོད་མ་ཚུགས་པའི་ཚུལ་ལུ་བསམས་ཏེ་སྡིག་པ་སྤང་ཚུལ།</h1> <!--Paragraph 86-->
+  <br><p>དམྱལ་བ་བྲིས་པ་མཐོང་དང་ཐོས་པ་དང་།།<br>དྲན་དང་བཀླགས་དང་གཟུགས་སུ་བགྱིས་རྣམས་ཀྱང་།།<br>འཇིགས་པ་བསྐྱེད་པར་འགྱུར་ན་མི་བཟད་པའི།།<br>རྣམ་སྨིན་ཉམས་སུ་མྱོང་ན་སྨོས་ཅི་འཚལ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	
+	<tr><td><a name="CollapseE87"><h1>87) Reflecting on how long one experiences them</h1></a><!--Paragraph 87-->
+  <p>For animals there’s multifold distress—<br>They’re slaughtered, tied up, beaten, and the rest.<br>
+  	For those denied the virtue that brings peace<br>There’s agony as one devours another.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE87" role="button" aria-expanded="false" aria-controls="collapseE87">
+    Explanation</a></p>
+<div class="collapse" id="collapseE87">
+  <div class="card card-body">
+	The utterly terrible sufferings just described are experienced for billions
+of years, and as long as those negative actions have not been exhausted
+one will not die. As long as one stays there one will experience hell, because the power of
+the action that becomes that experience has not been exhausted.
+	</div></div></td>
+		
+		<!--Stop here caus this is when we are done. we gotta go back to like the hundreds where you messed up-->
+		
+		<td><h1>༨༧༽སྡུག་བསྔལ་མྱོང་ནིའི་དུས་ཡུན།</h1> <!--Paragraph 89-->
+  <br><p>དེ་ལྟར་སྡུག་བསྔལ་ཤིན་ཏུ་མི་བཟད་ལོ།།<br>བྱེ་བ་ཕྲག་བརྒྱར་ཉམས་སུ་མྱོང་ཡང་ནི།།<br>ཇི་སྲིད་མི་དགེ་ཟད་པར་མ་གྱུར་པ།།<br>དེ་སྲིད་སྲོག་དང་བྲལ་བར་མི་འགྱུར་རོ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE88"><h1>88) Advice on avoiding the causes of these sufferings</h1></a><!--Paragraph 88-->
+  <p>The seeds of these the fruits of evil deeds<br>Are sinful acts of body, speech, and mind.<br>
+  	Work hard therefore and muster all your skill<br>To never stray a hair’s breadth into sin.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE88" role="button" aria-expanded="false" aria-controls="collapseE88">
+    Explanation</a></p>
+<div class="collapse" id="collapseE88">
+  <div class="card card-body">
+	  The seeds of these torments in hell, which are the results of negative
+actions, are the three kinds of wrong conduct with the body (taking life
+and so forth), the four with speech (telling lies and so on) and the three
+with the mind (covetousness and the others), on a large, medium, or small
+scale. O King, you must, by all means, never do even an atom’s worth of
+these three kinds of negative action. Endeavor in this very thing with all
+your mental skill. 
+  </div></div></td>
+		
+		<td><h1>༨༨༽སྡུག་བསྔལ་གྱི་རྒྱུ་སྤང་ཚུལ།</h1> <!--Paragraph 88-->
+  <br><p>མི་དགེའི་འབྲས་འདི་རྣམས་ཀྱི་ས་བོན་ནི།།<br>ལུས་ངག་ཡིད་ཀྱི་ཉེས་སྤྱོད་ཁྱོད་ཀྱིས་ནི།།<br>ཅི་ནས་དེ་རྡུལ་ཙམ་ཡང་མ་མཆིས་པས།།<br>དེ་ལྟར་ཉིད་ཀྱི་རྩལ་གྱིས་འབད་པར་མཛོད།།</p> <audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+
+	<tr><td><a name="CollapseE89"><h1>89) General sufferings</h1></a><!--Paragraph 89-->
+  <p>For animals there’s multifold distress—<br>They’re slaughtered, tied up, beaten, and the rest.<br>
+  	For those denied the virtue that brings peace<br>There’s agony as one devours another.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE89" role="button" aria-expanded="false" aria-controls="collapseE89">
+    Explanation</a></p>
+<div class="collapse" id="collapseE89">
+  <div class="card card-body">
+	  Throughout the animal realm too there is an infinite variety of suffering. Animals are killed by other beings, human and otherwise, trussed up
+with lassos and the like, beaten and whipped, and they suffer all sorts of
+other injury from humans and non humans. Being reborn as unsuitable
+vessels, animals are unable to practice68 the sublime virtue and so on by
+which one will obtain the peace of nirvana, and they are certain to have
+the truly horrendous ripened effect of being eaten by one another.
+  </div></div></td>
+<td><h1>༨༩༽དུད་འགྲོ་སྤྱིའི་སྡུག་བསྔལ།</h1> <!--Paragraph 89-->
+  <br><p>དུད་འགྲོའི་སྐྱེ་གནས་ན་ཡང་གསོད་པ་དང༌།།<br>བཅིང་དང་བརྡེག་སོགས་སྡུག་བསྔལ་སྣ་ཚོགས་པ།།<br>ཞི་འགྱུར་དགེ་བ་སྤངས་པ་རྣམས་ལ་ནི།།<br>གཅིག་ལ་གཅིག་བཟའ་ཤིན་ཏུ་མི་བཟད་པ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE90"><h1>90) The specific sufferings of animals that live scattered in different places</h1></a><!--Paragraph 90-->
+  <p>Some of them are killed just for their pearls,<br>Their wool, or bones, their meat or skins and fur,<br>
+  	And other helpless beasts are forced to work,<br>They’re kicked or struck with hands, with whips and goads.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE90" role="button" aria-expanded="false" aria-controls="collapseE90">
+    Explanation</a></p>
+<div class="collapse" id="collapseE90">
+  <div class="card card-body">
+Some animals living in the sea are killed for pearls, some, such as sheep,
+for wool; elephants and so forth for their bones; deer and other wild ungulates for their meat; and some, such as tigers and leopards, on account of
+their skins. Other animals—horses, buffaloes, donkeys, oxen, elephants,
+and the like—owned by gods and men have no freedom of their own and
+suffer from being forced into service and struck with weapons, being
+respectively kicked, hit, whipped, and goaded. 
+  </div></div></td>
+		
+		<td><h1>༩༠༽དུད་འགྲོ་སོ་སོའི་སྡུག་བསྔལ།</h1> <!--Paragraph 90-->
+  <br><p>ཁ་ཅིག་མུ་ཏིག་བལ་དང་རུས་པ་ཁྲག།<br>ཤ་དང་པགས་པའི་ཆེད་དུ་འཆི་བར་འགྱུར།།<br>དབང་མེད་གཞན་དག་རྡོག་པ་ལག་པ་དང༌།།<br>ལྕགས་དང་ལྕགས་ཀྱུ་གདབ་པས་བཏབ་སྟེ་བཀོལ།།</p> <audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE91"><h1>91) The sufferings of the pretas</h1></a><!--Paragraph 91-->
+  <p>For pretas too there’s not the slightest break<br>In suffering from their unfulfilled desires.<br>
+  	What dire misery they must endure<br>From hunger, thirst, cold, heat, fatigue, and fear.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE91" role="button" aria-expanded="false" aria-controls="collapseE91">
+    Explanation</a></p>
+<div class="collapse" id="collapseE91">
+  <div class="card card-body">
+For beings born as pretas there are the sufferings produced by frustrated
+desires. And because these are constant and unchanging, and there is no
+way to stop them, you should know that the pretas will undoubtedly have
+to endure the most terrible misery arising from hunger and thirst, from
+cold in winter and heat in summer, exhaustion from searching for food and
+drink, and terror when they see people brandishing sharp weapons and so
+forth. The point here is that you have to be diligent now in practicing positive actions assiduously.
+  </div></div></td>
+		
+		<td><h1>༩༡༽ཡི་དྭགས་སྤྱིའི་སྡུག་བསྔལ།</h1> <!--Paragraph 91-->
+  <br><p>ཡི་དྭགས་ན་ཡང་འདོད་པས་ཕོངས་པ་ཡིས།།<br>བསྐྱེད་པའི་སྡུག་བསྔལ་རྒྱུན་ཆགས་མི་འཆོས་པ།།<br>བཀྲེས་སྐོམ་གྲང་དྲོ་ངལ་དང་འཇིགས་པ་ཡིས།།<br>བསྐྱེད་པ་ཤིན་ཏུ་མི་བཟད་བསྟེན་འཚལ་ལོ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE92"><h1>92) The actual suffering</h1></a><!--Paragraph 92-->
+  <p>Some, their mouths like needles’ eyes, their bellies<br>Huge as mountains, ache from want of food.<br>
+  	They do not even have the strength to eat<br>Discarded scraps, the smallest bits of filth.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE92" role="button" aria-expanded="false" aria-controls="collapseE92">
+    Explanation</a></p>
+<div class="collapse" id="collapseE92">
+  <div class="card card-body">
+	  Some pretas have mouths as small as the eye of a needle, while their stomachs are as big as a mountain in size and difficult to fill so that they are tormented by hunger. Even if they find a little bit of discarded
+filth—excrement, urine, and the like—their mouths are so small they do
+not have the strength to eat it. 
+  </div></div></td>
+		
+		<td><h1>༩༢༽ཡི་དྭགས་ནང་གི་སྒྲིབ་པ་ཅན་གྱི་སྡུག་བསྔལ།</h1> <!--Paragraph 92-->
+  <br><p>ཁ་ཅིག་ཁ་ནི་ཁབ་ཀྱི་མིག་ཙམ་ལ།།<br>ལྟོ་བ་རི་ཡི་གཏོས་ཙམ་བཀྲེས་པས་ཉེན།།<br>མི་གཙང་གྱི་ནར་འབོར་བ་ཅུང་ཟད་ཀྱང༌།།<br>འཚལ་བའི་མཐུ་དང་ལྡན་པ་མ་ལགས་སོ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE93"><h1>93) The suffering</h1></a><!--Paragraph 93-->
+  <p>Some, their naked bodies skin and bone,<br>Are like the dried- out tops of tala trees.<br>
+  	And some have mouths that belch forth fire by night:<br>Into their burning mouths sand falls as food.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE93" role="button" aria-expanded="false" aria-controls="collapseE93">
+    Explanation</a></p>
+<div class="collapse" id="collapseE93">
+  <div class="card card-body">
+	  Some have bodies that are simply skin and bone, without any flesh,
+and are naked because they have no clothes. They are like the dried top of
+a palmyra tree, without any bark. Some blaze fire from their mouths
+every night—though not during the day—and eat hot sand as food that
+falls into their burning mouths. 
+  </div></div></td>
+		
+		<td><h1>༩༣༽ཡི་དྭགས་མེ་ལྕེའི་སྒྲིབ་པ་ཅན་གྱི་སྡུག་བསྔལ།</h1> <!--Paragraph 93-->
+  <br><p>ཁ་ཅིག་པགས་རུས་ལུས་ཤིང་གཅེར་བུ་སྟེ།།<br>ཏ་ལ་ཡང་ཐོག་བསྐམས་པ་ལྟ་བུ་ལགས།།<br>ཁ་ཅིག་མཚན་ཞིང་ཁ་ནས་འབར་བ་སྟེ།།<br>ཟས་སུ་འབར་བའི་ཁར་བབས་བྱེ་མ་འཚལ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE94"><h1>94) The suffering</h1></a><!--Paragraph 94-->
+  <p>A few unlucky ones don’t even find<br>Some dirt to eat—pus, excrement, or blood.<br>
+  	They hit each other in the face and eat<br>The pus that festers from their swollen necks.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE94" role="button" aria-expanded="false" aria-controls="collapseE94">
+    Explanation</a></p>
+<div class="collapse" id="collapseE94">
+  <div class="card card-body">
+	  Some of the most wretched kinds of pretas, with extremely little merit,
+suffer when they fail to find even filth such as pus, excrement, or blood,
+so one need hardly mention what it is like for them not finding anything
+good to eat. And yet, when they see each other they become enraged, hit
+each other on the face and throw clubs, bruising their necks and causing
+carbuncles to appear. The ripened pus dripping from these is what they
+have to endure as food.
+  </div></div></td>
+		
+		<td> <h1>༩༤༽ཡི་དྭགས་ཕྱིའི་སྒྲིབ་པ་ཅན་གྱི་སྡུག་བསྔལ།</h1> <!--Paragraph 94-->
+  <br><p>སྨད་རིགས་འགས་ནི་རྣག་དང་ཕྱི་ས་དང༌།།<br>ཁྲག་སོགས་མི་གཙང་བ་ཡང་མི་རྙེད་དེ།།<br>ཕན་ཚུན་གདོང་དུ་འཚོག་ཅིང་མགྲིན་པ་ནས།།<br>ལྦ་བ་བྱུང་བ་སྨིན་པའི་རྣག་འཚལ་ལོ།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE95"><h1>95) The suffering</h1></a><!--Paragraph 95-->
+  <p>For hungry ghosts the summer moon’s too hot,<br>In wintertime the sun is far too cold,<br>
+  	Fine trees in orchards wilt and lose their fruit,<br>And simply from their gaze great streams run dry.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE95" role="button" aria-expanded="false" aria-controls="collapseE95">
+    Explanation</a></p>
+<div class="collapse" id="collapseE95">
+  <div class="card card-body">
+	  These inferior classes of pretas suffer greatly from heat and cold: in
+summertime even the moon is too hot for them, while in winter they are
+cold even in the sun. Orchard trees, merely on being looked at by these
+pretas, appear to lose their ripe, abundant fruit and wither. And on account
+of their actions, their mere gaze makes rivers endowed with the eight perfect qualities seem to dry up and become filled with burning embers and
+quantities of excrement crawling with worms, “because,” as we read in the
+sutras, “there is one reality but a variety of minds. 
+  </div></div></td>
+		
+		<td><h1>༩༥༽ཡི་དྭགས་ལུ་སྡུག་བསྔལ་མ་འདྲཝ་གཞན་ཡང་ཡོད་ཚུལ།</h1> <!--Paragraph 95-->
+  <br><p>ཡི་དྭགས་རྣམས་ལ་སོ་ཀའི་དུས་སུ་ནི།།<br>ཟླ་བའང་ཚ་ལ་དགུན་ནི་ཉི་མའང་གྲང༌།།<br>ལྗོན་ཤིང་འབྲས་བུ་མེད་འགྱུར་འདི་དག་གིས།།<br>བལྟས་པ་ཙམ་གྱིས་ཀླུང་ཡང་སྐམ་པར་འགྱུར།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE96"><h1>96) The length of time their suffering is experienced</h1></a><!--Paragraph 96-->
+  <p>And some have bodies bound by that tight noose,<br>Their karmic store of previous evil deeds,<br>
+  	Now borne as constant misery and pain;<br>For five, ten thousand years they will not die.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE96" role="button" aria-expanded="false" aria-controls="collapseE96">
+    Explanation</a></p>
+<div class="collapse" id="collapseE96">
+  <div class="card card-body">
+	  Some beings bound by the tight karmic noose of negative actions, which
+are endured in subsequent lives as continuous suffering without the
+slightest break or opportunity for happiness, will not die for five thousand or even ten thousand years, even though they have no food or drink
+in all that time. Thus will they suffer on account of their actions.
+  </div></div></td>
+		
+		<td><h1>༩༦༽ཡི་དྭགས་ཀྱི་སྡུག་བསྔལ་མྱོང་བའི་ཡུན་ཚད།</h1> <!--Paragraph 96-->
+  <br><p>བར་ཆད་མེད་པར་སྡུག་བསྔལ་བསྟེན་གྱུར་པ།།<br>ཉེས་པར་སྤྱད་པའི་ལས་ཀྱི་ཞགས་པ་ནི།།<br>སྲ་བས་བཅིངས་པའི་ལུས་ཅན་ཁ་ཅིག་ལོ།།<br>ལྔ་སྟོང་དག་དང་ཁྲིར་ཡང་འཆི་མི་འགྱུར།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE97"><h1>97) The cause for experiencing these sufferings</h1></a><!--Paragraph 97-->
+  <p>The cause of these the pretas’ varied woes<br>And all such kindred torments one might get<br>
+  	Is being greedy, this the Buddha said:<br>Stinginess is not for the sublime.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE97" role="button" aria-expanded="false" aria-controls="collapseE97">
+    Explanation</a></p>
+<div class="collapse" id="collapseE97">
+  <div class="card card-body">
+	  The cause of anything one obtains that is similar to the misery that the
+pretas experience in this way—the various sufferings of hunger and
+thirst—is someone who indulges in avarice and is habitually stingy. The
+Buddha said that to be miserly is not the way of the sublime beings. 
+  </div></div></td>
+		
+		<td><h1>༩༧༽ཡི་དྭགས་ཀྱི་སྡུག་བསྔལ་གྱི་རྒྱུ་ངོ་སྤྲོད།</h1> <!--Paragraph 97-->
+  <br><p>དེ་ལྟར་ཡི་དྭགས་རྣམས་ཀྱིས་སྣ་ཚོགས་པའི།།<br>སྡུག་བསྔལ་རོ་གཅིག་ཐོབ་པ་གང་ལགས་པ།།<br>དེ་ཡི་རྒྱུ་ནི་སྐྱེ་བོ་འཇུངས་དགའ་བ།།<br>སེར་སྣ་འཕགས་མིན་ལགས་པར་སངས་རྒྱས་གསུངས།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+  
+	<tr><td><a name="CollapseE98"><h1>98) The sufferings of the gods</h1></a><!--Paragraph 98-->
+  <p>Even in the higher realms the pains of death<br>Are more intense than is their greatest bliss.<br>
+  	And so good people who reflect on this<br>Don’t crave the higher realms, which soon must end.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE98" role="button" aria-expanded="false" aria-controls="collapseE98">
+    Explanation</a></p>
+<div class="collapse" id="collapseE98">
+  <div class="card card-body">
+	  One might obtain rebirth in the higher realms as a god in the world of
+desire. But though the gods are indeed very happy and enjoy abundance
+and perfection in a desirable place, their anguish when they go through the
+experience of death and transmigration is much greater even than the
+happiness they had before. Having reflected on this, good people who have knowledge, realization, and wisdom do not crave happiness, for even happiness will be
+exhausted: it has no true essence, and for this reason they do not crave the
+happiness of the higher realms.
+  </div></div></td>
+		
+		<td><h1>༩༨༽ལྷའི་སྡུག་བསྔལ་སྤྱིར་བསྟན་པ།</h1> <!--Paragraph 98-->
+  <br><p>མཐོ་རིས་ན་ཡང་བདེ་ཆེན་དེ་དག་གི།<br>འཆི་འཕོའི་སྡུག་བསྔལ་ཉིད་ནི་དེ་བས་ཆེ།།<br>དེ་ལྟར་བསམས་ནས་ཡ་རབས་རྣམས་ཀྱིས་ནི།།<br>ཟད་འགྱུར་མཐོ་རིས་སླད་དུ་སྲེད་མི་བགྱི།།</p><audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	
+	<tr><td><a name="CollapseE99"><h1>99) Detailed explanation on the suffering of gods<br><br></h1></a><!--Paragraph 99-->
+  <p>Their bodies’ colors cease to charm and please,<br>Their seats grow hard, their flowered wreaths do wilt,<br>
+  	Their clothes are stained, and on their bodies now appear<br>Rank drops of sweat they never had before.</p>
+		
+		<p><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseE99" role="button" aria-expanded="false" aria-controls="collapseE9
